@@ -24,7 +24,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINji
     bin:Label("不知道更新(缝合)什么了")
     bin:Label("正在努力制作此脚本")
     bin:Label("创作日期：忘了")
-    bin:Label("发布日期：做好了发")
+    bin:Label("更新时间：2024年11月17日")
     
     bin:Button("复制作者qq", function()
     setclipboard("110")
