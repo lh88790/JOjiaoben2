@@ -648,8 +648,9 @@ credits:Button(
         loadstring(game:HttpGet("https://paste.ee/r/AnZ5j"))()
         end)
         
-        local credits = creds:section("最强战场传送", true)
-        
+        local creds = window:Tab("最强战场传送", "6035145364")
+    local credits = creds:section("传送内容", true)
+    
         credits:Button(
         "传送到假人那",
         function()
