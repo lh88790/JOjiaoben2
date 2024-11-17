@@ -47,7 +47,7 @@ credits:Slider('修改跳跃', 'Sliderflag',  16, 16, 999999,false, function(Val
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 	end)
 	
-	credits:Slider('修改重力', 'Sliderflag',  120, 120, 999999,false, function(Value)
+	credits:Slider('修改重力', 'Sliderflag',  190, 190, 999999,false, function(Value)
 	game.Workspace.Gravity = Value
 	end)
 	
