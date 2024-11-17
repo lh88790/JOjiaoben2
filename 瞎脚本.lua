@@ -20,9 +20,9 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINji
     bin:Label("你的注入器:" .. identifyexecutor())
     bin:Label("你的地图id:"..game.PlaceId)
     bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
-    bin:Label("基本全缝合，一些自制")    
+    bin:Label("基本全缝合，一些《自制》")    
     bin:Label("不知道更新(缝合)什么了")
-    bin:Label("正在努力制作此中心")
+    bin:Label("正在努力制作此脚本")
     bin:Label("创作日期：忘了")
     bin:Label("发布日期：做好了发")
     
@@ -652,7 +652,7 @@ credits:Button(
     local credits = creds:section("传送内容", true)
     
         credits:Button(
-        "传送到假人那",
+        "传送到假人生成点",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(149.818115234375, 440.7559814453125, 29.94855499267578)
         end)
@@ -679,6 +679,48 @@ credits:Button(
         "传送到原子武士大招下面",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1096, 19.927001953125, 23010.998046875)
+        end)
+        
+        credits:Button(
+        "传送打架专属位置",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(151.79539489746094, 439.51055908203125, -524.4990844726562)
+        end)
+        
+        credits:Button(
+        "传送到神秘地点",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.5220336914062, 442.50567626953125, -1296.0042724609375)
+        end)
+        
+        credits:Button(
+        "传送到神秘地点2",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1589.6148681640625, 442.50567626953125, 402.5389709472656)
+        end)
+        
+        credits:Button(
+        "传送到神秘月抛点😍",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(287.77398681640625, 439.51055908203125, 480.2169189453125)
+        end)
+        
+        credits:Button(
+        "传送到沙滩",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(437.9998474121094, 440.6055908203125, -375.9998779296875)
+        end)
+        
+        credits:Button(
+        "传送到海",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1011.7119750976562, 442.50567626953125, -307.4450988769531)
+        end)
+        
+        credits:Button(
+        "传送到瀑布上",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1162.2137451171875, 816.7724609375, -807.6665649414062)
         end)
 
 local creds = window:Tab("其他脚本", "6035145364")
