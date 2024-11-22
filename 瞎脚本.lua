@@ -57,6 +57,12 @@ credits:Slider('修改跳跃', 'Sliderflag',  16, 16, 999999,false, function(Val
 	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
 end)
 
+    credits:Button(
+        "隐身",
+        function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
+        end)
+
 credits:Button(
         "点击传送工具",
         function()
@@ -631,13 +637,7 @@ credits:Button(
         end)
         
         credits:Button(
-        "外网隐身脚本(也包含其他很多功能)",
-        function()
-        loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Phantasm-20980"))()
-        end)
-        
-        credits:Button(
-        "外网超强脚本",
+        "外网超强脚本(有隐身)",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/main/TSB-VexonHub"))()
         end)
@@ -655,6 +655,12 @@ credits:Button(
         "传送到假人生成点",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(149.818115234375, 440.7559814453125, 29.94855499267578)
+        end)
+        
+        credits:Button(
+        "传送到虚空",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9940.13482163, -100.1116714, 85.14746118)
         end)
         
         credits:Button(
