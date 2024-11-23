@@ -60,7 +60,7 @@ end)
     credits:Button(
         "隐身",
         function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
+        loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
         end)
 
 credits:Button(
@@ -628,6 +628,12 @@ credits:Button(
         "KJ",
         function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-I-found-a-person-mode-KJ-fake-one-not-mine-19405"))()
+        end)
+        
+        credits:Button(
+        "KADE HUB",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/Work/main/latest.lua"))()
         end)
         
         credits:Button(
