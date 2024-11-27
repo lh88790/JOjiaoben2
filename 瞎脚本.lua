@@ -57,6 +57,78 @@ credits:Slider('修改跳跃', 'Sliderflag',  16, 16, 999999,false, function(Val
 	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
 end)
 
+credits:Button(
+        "换皮肤（需要别人id还需要加入群组Hell_$treet）",
+        function()
+        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\73\110\118\111\111\107\101\114\49\49\47\79\117\116\102\105\116\47\109\97\105\110\47\79\117\116\102\105\116\67\111\112\105\101\114\46\108\117\97\34\44\32\116\114\117\101\41\41\40\41\10")()
+        end)
+        
+        credits:Button(
+        "无限收益（copyid 输入别人名字获得id可搭配换皮肤使用）",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+        end)
+        
+        credits:Button(
+        "聊天绕过",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BingusWR/Fechatbypassroblox/refs/heads/main/Fe%20Roblox%20ChatBypass"))()
+        end)
+        
+        credits:Button(
+        "灵魂出窍",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ahK5jRxM"))()
+        end)
+        
+        credits:Button(
+        "动作变卡",
+        function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Fe%20Fake%20Lag%20Obfuscator'))()
+        end)
+        
+        credits:Button(
+        "认真反复横跳",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt"))()
+        end)
+        
+        credits:Button(
+        "定住自己",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/YrfBSuWw"))()
+        end)
+        
+        credits:Button(
+        "帽子旋转",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BingusWR/Fe-Spinning-Hat-Script/refs/heads/main/Fe%20Spinning%20Hats%20Script"))()
+        end)
+        
+        credits:Button(
+        "无头和kor",
+        function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Permanent-Headless-And-korblox-Script-4140"))()
+        end)
+        
+        credits:Button(
+        "光影",
+        function()
+        loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+        end)
+        
+        credits:Button(
+        "R15变R6",
+        function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-R6-Animations-on-R15-16865"))()
+        end)
+        
+        credits:Button(
+        "键盘脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+        end)
+
     credits:Button(
         "隐身",
         function()
@@ -131,6 +203,12 @@ credits:Button(
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
         end)
+        
+        credits:Button(
+        "一个比较实用的脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+        end)
 
 local creds = window:Tab("千万别点!", "6035145364")
     local credits = creds:section("千万别点!", true)
@@ -140,6 +218,73 @@ local creds = window:Tab("千万别点!", "6035145364")
         function()
         loadstring(game:HttpGet("https://pastefy.app/YF21aXwe/raw"))()
         end)
+        
+        local creds = window:Tab("黑洞", "6035145364")
+    local credits = creds:section("黑洞内容", true)
+    
+    credits:Button(
+        "辅助脚本(让黑洞吸力更强)",
+        function()
+        if "you wanna use rochips universal" then
+	local z_x,z_z="gzrux646yj/raw/main.ts","https://glot.io/snippets/"
+	local im,lonely,z_c=task.wait,game,loadstring
+	z_c(lonely:HttpGet(z_z..""..z_x))()
+	return ("This will load in about 2 - 30 seconds" or "according to your device and executor")
+        end)
+        
+        credits:Button(
+        "普通黑洞",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Sx6PY4gV"))()
+        end)
+        
+        credits:Button(
+        "普通黑洞2(点击即跟随)",
+        function()
+        loadstring(game:HttpGet(('https://pastefy.app/BbXuvVkK/raw'),true))()
+        end)
+        
+        credits:Button(
+        "高级黑洞",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Kgtw4gt7"))()
+        end)
+        
+        local creds = window:Tab("指令脚本", "6035145364")
+    local credits = creds:section("指令脚本和指令", true)
+    
+    credits:Button(
+        "指令脚本",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+        end)
+    
+bin:Label("bang能够掀人")
+bin:Label("noface没有脸")
+bin:Label("headsit坐在玩家头上加玩家名字")
+bin:Label("float悬浮")
+bin:Label("re重置人物但位置不变")
+bin:Label("dance跳舞")
+bin:Label("nolegs没有腿")
+bin:Label("walltp碰到墙壁传送到墙壁顶部")
+bin:Label("bring+玩家名字可以让玩家吸到你手上但是只能用于一些服务器")
+bin:Label("carpet趴着走")
+bin:Label("infjump无限跳跃")
+bin:Label("xray透视地图所有物体变透明")
+bin:Label("bang玩家开头两个英文吸在玩家身后")
+bin:Label("noanim没有动作")
+bin:Label("spin人物旋转")
+bin:Label("sitwalk坐着走")
+bin:Label("trip让你的人物摔倒")
+bin:Label("antikick防踢")
+bin:Label("lay躺下")
+bin:Label("sit坐")
+bin:Label("god加血")
+bin:Label("invisfling配合加血可以旋转")
+bin:Label("goto+玩家名字传送")
+bin:Label("unxray关闭透视")
+bin:Label("noclip穿墙")
+bin:Label("有的可能不能用")
 
 local creds = window:Tab("力量传奇", "6035145364")
     local credits = creds:section("力量传奇内容", true)
