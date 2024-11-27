@@ -60,7 +60,7 @@ end)
 credits:Button(
         "换皮肤（需要别人id还需要加入群组Hell_$treet）",
         function()
-        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\73\110\118\111\111\107\101\114\49\49\47\79\117\116\102\105\116\47\109\97\105\110\47\79\117\116\102\105\116\67\111\112\105\101\114\46\108\117\97\34\44\32\116\114\117\101\41\41\40\41\10")()
+ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\73\110\118\111\111\107\101\114\49\49\47\79\117\116\102\105\116\47\109\97\105\110\47\79\117\116\102\105\116\67\111\112\105\101\114\46\108\117\97\34\44\32\116\114\117\101\41\41\40\41\10")()
         end)
         
         credits:Button(
@@ -221,16 +221,6 @@ local creds = window:Tab("千万别点!", "6035145364")
         
         local creds = window:Tab("黑洞", "6035145364")
     local credits = creds:section("黑洞内容", true)
-    
-    credits:Button(
-        "辅助脚本(让黑洞吸力更强)",
-        function()
-        if "you wanna use rochips universal" then
-	local z_x,z_z="gzrux646yj/raw/main.ts","https://glot.io/snippets/"
-	local im,lonely,z_c=task.wait,game,loadstring
-	z_c(lonely:HttpGet(z_z..""..z_x))()
-	return ("This will load in about 2 - 30 seconds" or "according to your device and executor")
-        end)
         
         credits:Button(
         "普通黑洞",
@@ -250,42 +240,6 @@ local creds = window:Tab("千万别点!", "6035145364")
         loadstring(game:HttpGet("https://pastebin.com/raw/Kgtw4gt7"))()
         end)
         
-        local creds = window:Tab("指令脚本", "6035145364")
-    local credits = creds:section("指令脚本和指令", true)
-    
-    credits:Button(
-        "指令脚本",
-        function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-        end)
-    
-bin:Label("bang能够掀人")
-bin:Label("noface没有脸")
-bin:Label("headsit坐在玩家头上加玩家名字")
-bin:Label("float悬浮")
-bin:Label("re重置人物但位置不变")
-bin:Label("dance跳舞")
-bin:Label("nolegs没有腿")
-bin:Label("walltp碰到墙壁传送到墙壁顶部")
-bin:Label("bring+玩家名字可以让玩家吸到你手上但是只能用于一些服务器")
-bin:Label("carpet趴着走")
-bin:Label("infjump无限跳跃")
-bin:Label("xray透视地图所有物体变透明")
-bin:Label("bang玩家开头两个英文吸在玩家身后")
-bin:Label("noanim没有动作")
-bin:Label("spin人物旋转")
-bin:Label("sitwalk坐着走")
-bin:Label("trip让你的人物摔倒")
-bin:Label("antikick防踢")
-bin:Label("lay躺下")
-bin:Label("sit坐")
-bin:Label("god加血")
-bin:Label("invisfling配合加血可以旋转")
-bin:Label("goto+玩家名字传送")
-bin:Label("unxray关闭透视")
-bin:Label("noclip穿墙")
-bin:Label("有的可能不能用")
-
 local creds = window:Tab("力量传奇", "6035145364")
     local credits = creds:section("力量传奇内容", true)
     
