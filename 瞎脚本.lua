@@ -219,27 +219,6 @@ local creds = window:Tab("千万别点!", "6035145364")
         loadstring(game:HttpGet("https://pastefy.app/YF21aXwe/raw"))()
         end)
         
-        local creds = window:Tab("黑洞", "6035145364")
-    local credits = creds:section("黑洞内容", true)
-        
-        credits:Button(
-        "普通黑洞",
-        function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/Sx6PY4gV"))()
-        end)
-        
-        credits:Button(
-        "普通黑洞2(点击即跟随)",
-        function()
-        loadstring(game:HttpGet(('https://pastefy.app/BbXuvVkK/raw'),true))()
-        end)
-        
-        credits:Button(
-        "高级黑洞",
-        function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/Kgtw4gt7"))()
-        end)
-        
 local creds = window:Tab("力量传奇", "6035145364")
     local credits = creds:section("力量传奇内容", true)
     
