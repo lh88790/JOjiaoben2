@@ -165,7 +165,7 @@ credits:Button(
 end)
 
 credits:Button(
-        "无限跳（失效)",
+        "无限跳",
         function()
         Jump = Value
         game.UserInputService.JumpRequest:Connect(function()
@@ -199,13 +199,19 @@ credits:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
         end)
 
-local creds = window:Tab("千万别点!", "6035145364")
-    local credits = creds:section("千万别点!", true)
+local creds = window:Tab("整活脚本!", "6035145364")
+    local credits = creds:section("整活脚本!", true)
     
     credits:Button(
         "别点!",
         function()
         loadstring(game:HttpGet("https://pastefy.app/YF21aXwe/raw"))()
+        end)
+        
+        credits:Button(
+        "打飞机道具🤓(有些服务器用不了)",
+        function()
+        loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
         end)
         
 local creds = window:Tab("力量传奇", "6035145364")
