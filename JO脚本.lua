@@ -36,7 +36,7 @@ end)
     setclipboard("万華鏡血輪眼の幻術の中にひっそりとしているのだろう")
 end)
 
-local creds = window:Tab("通用", "6035145364")
+local creds = window:Tab("通用", "764")
     local credits = creds:section("通用内容", true)
     
 credits:Slider('修改速度', 'WalkspeedSlider', 16, 16, 99999,false, function(Value)
