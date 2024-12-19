@@ -36,7 +36,7 @@ end)
     setclipboard("万華鏡血輪眼の幻術の中にひっそりとしているのだろう")
 end)
 
-local creds = window:Tab("通用", "764")
+local creds = window:Tab("通用", "6035145364")
     local credits = creds:section("通用内容", true)
     
 credits:Slider('修改速度', 'WalkspeedSlider', 16, 16, 99999,false, function(Value)
@@ -214,6 +214,21 @@ local creds = window:Tab("整活脚本!", "6035145364")
         loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
         end)
         
+        local creds = window:Tab("用来制作脚本的", "6035145364")
+    local credits = creds:section("制作脚本用的", true)
+    
+    credits:Button(
+        "DEX脚本",
+        function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888"))()
+        end)
+        
+        credits:Button(
+        "spy脚本",
+        function()
+        _G.data = settings loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptSkiddie69/RemoteHook/refs/heads/main/SimpleSpyLite.lua'))()
+        end)
+        
 local creds = window:Tab("力量传奇", "6035145364")
     local credits = creds:section("力量传奇内容", true)
     
@@ -293,7 +308,37 @@ creditsHUB:Button(
             loadstring(game:HttpGet("https://raw.githubusercontent.com/trdrock/mm2/main/KosyHub"))()
         end
     )
+    
+        local creds = window:Tab("BF", "6035145364")
+    local credits = creds:section("BF", true)
+    
+    credits:Button(
+        "BF好用的脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Kncrypt/refs/heads/main/sources/BloxFruit.lua"))()
+    end)
+    
+    credits:Button(
+        "BF外网脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+        end)
+    
+    local creds = window:Tab("Ficsh", "6035145364")
+    local credits = creds:section("通用内容", true)
+    
+    credits:Button(
+        "功能齐全的脚本",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/wZBEgHFk"))()
+        end)
         
+        credits:Button(
+        "Ficsh汉化脚本",
+        function()
+        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\103\105\116\104\117\98\46\99\111\109\47\88\105\97\111\89\117\110\85\119\85\47\88\105\97\111\89\117\110\85\119\85\47\114\97\119\47\109\97\105\110\47\83\99\114\105\112\116\37\50\70\70\105\115\99\104\37\50\48\67\78\37\50\48\86\101\114\115\105\111\110\34\44\32\116\114\117\101\41\41\40\41\10")()
+        end)
+    
         local creds = window:Tab("火箭发射器", "7733770982")
     local creditsML = creds:section("功能", true)   
    
