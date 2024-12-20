@@ -226,7 +226,7 @@ local creds = window:Tab("整活脚本!", "7733770599")
         credits:Button(
         "spy脚本",
         function()
-        _G.data = settings loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptSkiddie69/RemoteHook/refs/heads/main/SimpleSpyLite.lua'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptSkiddie69/RemoteHook/refs/heads/main/SimpleSpyLite.lua'))()
         end)
         
 local creds = window:Tab("力量传奇", "7733770599")
