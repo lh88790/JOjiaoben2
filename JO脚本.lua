@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/lh88790/JOjiaoben2/main/VeaMSRZK.lua"))()
 OrionLib:MakeNotification({
                     Name = "JOJOnb！！！",
                     Content = "JO脚本已为您加载成功",
