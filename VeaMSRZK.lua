@@ -21,7 +21,7 @@ local OrionLib = {
 		}
 	},
 	SelectedTheme = "Default",
-	Folder = /storage/emulated/0/DCIM/taplus/taplus_image/dio.png,
+	Folder = nil,
 	SaveCfg = false
 }
 
