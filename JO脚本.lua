@@ -374,6 +374,12 @@ creditsHUB:Button(
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2507.44141, 143.233383, 1563.09326, -0.998476744, -0.0264155734, 0.0484404489, 0, 0.877945065, 0.478761524, -0.0551748052, 0.478032261, -0.876607716)
         end)
+        
+        credits:Button(
+        "传送到购买改变天气的图腾地点",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1149.55713, 145.805634, -1056.40002, 0.99958992, 0.0150282877, -0.0243737847, 0, 0.851205349, 0.524832726, 0.0286344327, -0.524617493, 0.850856364)
+        end)
     
         local creds = window:Tab("火箭发射器", "7733770599")
     local creditsML = creds:section("功能", true)   
