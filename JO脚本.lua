@@ -226,7 +226,7 @@ local creds = window:Tab("整活脚本!", "7733770599")
         credits:Button(
         "spy脚本",
         function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/ScriptSkiddie69/RemoteHook/refs/heads/main/SimpleSpyLite.lua'))()
+        loadstring(game:HttpGet("https://web.archive.org/web/20240323091819/https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
         end)
         
 local creds = window:Tab("力量传奇", "7733770599")
@@ -337,6 +337,42 @@ creditsHUB:Button(
         "Ficsh汉化脚本",
         function()
         loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\103\105\116\104\117\98\46\99\111\109\47\88\105\97\111\89\117\110\85\119\85\47\88\105\97\111\89\117\110\85\119\85\47\114\97\119\47\109\97\105\110\47\83\99\114\105\112\116\37\50\70\70\105\115\99\104\37\50\48\67\78\37\50\48\86\101\114\115\105\111\110\34\44\32\116\114\117\101\41\41\40\41\10")()
+        end)
+        
+        credits:Button(
+        "卖掉手上拿着的鱼",
+        function()
+        game:GetService("ReplicatedStorage").events.Sell:InvokeServer()
+        end)
+        
+        credits:Button(
+        "卖掉背包所有的鱼(稀有鱼不会被卖)",
+        function()
+        game:GetService("ReplicatedStorage").events.SellAll:InvokeServer()
+        end)
+        
+        credits:Button(
+        "传送到深度",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(943.756958, -706.108398, 1251.77087, -0.386100113, 0.284740716, -0.87741065, 0, 0.951167107, 0.308676451, 0.92245692, 0.119180016, -0.367245734)
+        end)
+        
+        credits:Button(
+        "传送到守卫祭坛",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1309.84265, -796.916199, -107.134315, -0.922893524, 0.152973562, -0.353364706, 0, 0.917698741, 0.397276968, 0.385055184, 0.366644353, -0.846938312)
+        end)
+        
+        credits:Button(
+        "传送到深渊",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1653.52563, -199.001068, -2841.93066, -0.975113094, -0.126666948, 0.181961268, 0, 0.820724964, 0.571323395, -0.22170797, 0.557104945, -0.800299704)
+        end)
+        
+        credits:Button(
+        "传送到被遗弃的海岸",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2507.44141, 143.233383, 1563.09326, -0.998476744, -0.0264155734, 0.0484404489, 0, 0.877945065, 0.478761524, -0.0551748052, 0.478032261, -0.876607716)
         end)
     
         local creds = window:Tab("火箭发射器", "7733770599")
@@ -556,7 +592,7 @@ Tab21:Button(
         loadstring(game:HttpGet("https://pastefy.app/IIpzN8f5/raw"))()
         end)
     
-    local creds = window:Tab("战斗勇士", "7733788966")
+    local creds = window:Tab("战斗勇士", "7733770599")
     local credits = creds:section("脚本内容", true)    
     
 credits:Button(
