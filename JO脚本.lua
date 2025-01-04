@@ -574,20 +574,6 @@ Tab21:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
         end)
         
-        local creds = window:Tab("刀刃球", "7733770599")
-    local credits = creds:section("刀刃球内容", true)
-    
-    credits:Button(
-        "刀刃球1",
-        function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/xv50b6JL"))()
-        end)
-        
-    credits:Button(
-        "刀刃球2",
-        function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))())
-        end)
     
        local creds = window:Tab("奶酪逃生", "7733770599")
     local credits = creds:section("奶酪逃生", true)
