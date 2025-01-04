@@ -574,6 +574,14 @@ Tab21:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
         end)
         
+    local creds = window:Tab("刀刃球", "7733770599")
+    local credits = creds:section("刀刃球", true)
+    
+    credits:Button(
+        "刀刃球",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Serwxl/BladeBall_AutoParry/refs/heads/main/Autoparry"))()
+        end)
     
        local creds = window:Tab("奶酪逃生", "7733770599")
     local credits = creds:section("奶酪逃生", true)
