@@ -376,7 +376,7 @@ creditsHUB:Button(
         end)
         
         credits:Button(
-        "传送到购买改变天气的图腾地点",
+        "传送到购买改变天气图腾的地点",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1149.55713, 145.805634, -1056.40002, 0.99958992, 0.0150282877, -0.0243737847, 0, 0.851205349, 0.524832726, 0.0286344327, -0.524617493, 0.850856364)
         end)
@@ -583,12 +583,13 @@ Tab21:Button(
         loadstring(game:HttpGet("https://pastebin.com/raw/xv50b6JL"))()
         end)
         
-        credits:Button(
+    credits:Button(
         "刀刃球2",
-        function()loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))())
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))())
         end)
     
-    local creds = window:Tab("奶酪逃生", "7733770599")
+       local creds = window:Tab("奶酪逃生", "7733770599")
     local credits = creds:section("奶酪逃生", true)
     
     credits:Button(
