@@ -519,6 +519,15 @@ creditsDSB:Button(
         end
     )
     
+local creds = window:Tab("被遗弃", "91558537728361")
+    local credits = creds:section("被遗弃", true)
+    
+    credits:Button(
+        "被遗弃脚本(好用",
+        function()
+        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/SilkScripts/AppleStuff/refs/heads/main/AppleFSKV2")))()
+        end)
+    
         local creds = window:Tab("河北唐县", "7733770599")
     local Tab21 = creds:section("脚本内容", true)
     
@@ -806,6 +815,12 @@ credits:Button(
         "改恶狼动作(包含两个功能)",
         function()
         loadstring(game:HttpGet("https://paste.ee/r/AnZ5j"))()
+        end)
+        
+        credits:Button(
+        "自动格挡",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
         end)
         
         local creds = window:Tab("最强战场传送", "7733770599")
