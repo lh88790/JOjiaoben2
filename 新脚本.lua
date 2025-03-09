@@ -620,6 +620,7 @@ Tab21:Button(
         "垃圾桶战神",
         function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
+       end)
         
        credits:Button(
         "改恶狼动作(包含两个功能)",
