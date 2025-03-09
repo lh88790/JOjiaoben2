@@ -588,189 +588,6 @@ Tab21:Button(
         function()
         loadstring(game:HttpGet("https://pastefy.app/IIpzN8f5/raw"))()
         end)
-    
-    local creds = window:Tab("战斗勇士", "7733770599")
-    local credits = creds:section("脚本内容", true)    
-    
-credits:Button(
-        "无限体力1",
-        function()
-            loadstring(game:HttpGet("https://shz.al/~KSK"))()
-        end
-    )
-   
-   credits:Button(
-        "无限体力2",
-        function()
-            for i,v in pairs(getgc(true)) do
-   if typeof(v) == "table" and rawget(v, "getIsMaxed") then
-       v.getIsMaxed = function()
-           return false
-       end
-       v.getFlags = function()
-           return 1
-       end
-       v.addFlags = function(a,b)
-           a:setFlags(0)
-           return
-       end
-   end
-   -- "There was another script here but it caused the user to crash (lag out), so it had to be removed" -KiwisASkid --
-   if typeof(v) == "table" and rawget(v, "spawnCharacter") then
-       local oldfunc = v.spawnCharacter
-       v.SpawnCharacter = function(a)
-           for _,f in pairs(getgc(true)) do
-               if typeof(f) == "table" and rawget(f, "getIsMaxed") then
-                   f.getIsMaxed = function()
-                       return false
-                   end
-                   f.getFlags = function()
-                       return 1
-                   end
-                   f.addFlags = function(aa,b)
-                       aa:setFlags(0)
-                       return
-                   end
-               end
-           end
-       end
-   end
-   if typeof(v) == "table" and rawget(v, "getCanJump") then
-       v.getCanJump = function()
-           return true
-       end
-   end
-   if typeof(v) == "table" and rawget(v, "JUMP_DELAY_ADD") then
-       v.JUMP_DELAY_ADD = 0.5
-   end
-   if typeof(v) == "table" and rawget(v, "_setStamina") then
-       v._setStamina = function(a, b)
-           a._stamina = math.huge
-           a._staminaChangedSignal:Fire(99)
-       end
-   end
-end
-game.StarterGui:SetCore("SendNotification", {Title = "你好", Text = "Script loaded, "..game.Players.LocalPlayer.DisplayName..".", Duration = 4,})
-        end
-    )
-    
-credits:Button(
-        "Zab HUB",
-        function()
-            loadstring(game:HttpGet('https://itots.tk/zaphub/ZapHubFreeVersion'))()
-        end
-    )
-   
- credits:Button(
-        "反盾",
-        function()
-            local lp = game.Players.LocalPlayer
-
-local animationInfo = {}
-
-function getInfo(id)
-  local success, info = pcall(function()
-      return game:GetService("MarketplaceService"):GetProductInfo(id)
-  end)
-  if success then
-      return info
-  end
-  return {Name=''}
-end
-function block(player)
-  keypress(0x46)
-  wait()
-  keyrelease(0x46)
-end
-
-local AnimNames = {
-  'Slash',
-  'Swing',
-  'Sword'
-}
-
-function playerAdded(v)
-    local function charadded(char)
-      local humanoid = char:WaitForChild("Humanoid", 5)
-      if humanoid then
-          humanoid.AnimationPlayed:Connect(function(track)
-              local info = animationInfo[track.Animation.AnimationId]
-              if not info then
-                  info = getInfo(tonumber(track.Animation.AnimationId:match("%d+")))
-                  animationInfo[track.Animation.AnimationId] = info
-              end
-             
-              if (lp.Character and lp.Character:FindFirstChild("Head") and v.Character:FindFirstChild("Head")) then
-                  local mag = (v.Character.Head.Position - lp.Character.Head.Position).Magnitude
-                  if mag < 15  then
-                     
-                      for _, animName in pairs(AnimNames) do
-                          if info.Name:match(animName) then
-                              pcall(block, v)
-                          end
-                      end
-                     
-                  end
-              end
-          end)
-      end
-  end
- 
-  if v.Character then
-      charadded(v.Character)
-  end
-  v.CharacterAdded:Connect(charadded)
-end
-
-for i,v in pairs(game.Players:GetPlayers()) do
-   if v ~= lp then
-       playerAdded(v)
-   end
-end
-
-game.Players.PlayerAdded:Connect(playerAdded)
-        end
-    )
-    
-credits:Button(
-        "敌人打不死",
-        function()
-            local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
-local spawnbox = workspace.SpawnBox
-
-HRP.CFrame = spawnbox.SpawnPart.CFrame
-        end
-    )
-   
-   credits:Button(
-        "KK Hub",
-        function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaaaKK/cwhb/main/cw.txt"))()
-        end
-    )
-    
-credits:Button(
-        "淘汰光环",
-        function()
-            loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
-        end
-    )
-   
-   credits:Button(
-        "TopG Hub",
-        function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/leakediz/top-g/main/combat%20warriors"))()
-        end
-    )
-    
-credits:Button(
-        "nova Hub",
-        function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/novahub"))()
-        end
-    )
-   
-        
 
         local creds = window:Tab("最强战场", "7733770599")
     local credits = creds:section("最强战场内容", true)
@@ -814,4 +631,154 @@ credits:Button(
         "自动格挡",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
+        end)
+        
+        local creds = window:Tab("最强战场传送", "7733770599")
+    local credits = creds:section("传送内容", true)
+    
+        credits:Button(
+        "传送到假人生成点",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(149.818115234375, 440.7559814453125, 29.94855499267578)
+        end)
+        
+        credits:Button(
+        "传送到虚空",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9940.13482163, -100.1116714, 85.14746118)
+        end)
+        
+        credits:Button(
+        "传送到山顶",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10.000232696533203, 652.521240234375, -389.9998474121094)
+        end)
+        
+        credits:Button(
+        "传送到琦玉大招处",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-68.14830017089844, 29.253990173339844, 20346.373046875)
+        end)
+        
+        credits:Button(
+        "传送到原子武士大招处",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1065, 131.93948364257812, 23004.998046875)
+        end)
+        
+        credits:Button(
+        "传送到原子武士大招下面",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1096, 19.927001953125, 23010.998046875)
+        end)
+        
+        credits:Button(
+        "传送打架专属位置",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(151.79539489746094, 439.51055908203125, -524.4990844726562)
+        end)
+        
+        credits:Button(
+        "传送到神秘地点",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.5220336914062, 442.50567626953125, -1296.0042724609375)
+        end)
+        
+        credits:Button(
+        "传送到神秘地点2",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1589.6148681640625, 442.50567626953125, 402.5389709472656)
+        end)
+        
+        credits:Button(
+        "传送到神秘月抛点😍",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(287.77398681640625, 439.51055908203125, 480.2169189453125)
+        end)
+        
+        credits:Button(
+        "传送到沙滩",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(437.9998474121094, 440.6055908203125, -375.9998779296875)
+        end)
+        
+        credits:Button(
+        "传送到海",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1011.7119750976562, 442.50567626953125, -307.4450988769531)
+        end)
+        
+        credits:Button(
+        "传送到瀑布上",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1162.2137451171875, 816.7724609375, -807.6665649414062)
+        end)
+
+local creds = window:Tab("其他脚本", "7733770599")
+    local credits = creds:section("其他脚本内容", true)
+    
+    credits:Button(
+        "落叶中心",
+        function()
+        getgenv().LS="落叶中心" loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
+        end)
+        
+    credits:Button(
+        "安脚本付费版(免费了但需要加群组)",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/refs/heads/main/%E5%AE%89%E8%84%9A%E6%9C%AC.lua')))()
+        end)
+        
+        credits:Button(
+        "COA脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAJIAOBEN/main/By.pop.cat.kun/COXIEYI"))()
+        end)
+        
+        credits:Button(
+        "退休脚本",
+        function()
+        qun="809771141"loadstring(game:HttpGet("https://pastebin.com/raw/yPhwFHy4"))()
+        end)
+        
+        credits:Button(
+        "安脚本免费版",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
+        end)
+        
+        credits:Button(
+        "猫王脚本",
+        function()
+        getgenv().MAO = "猫猫王者脚本群935143896"loadstring(game:HttpGet("https://raw.githubusercontent.com/dkfkfkfjfkfjdj/longshu/main/%E6%B7%B7%E6%B7%86%E6%96%87%E4%BB%B6.lua"))()("猫猫脚本 V2.0")
+        end)
+        
+        credits:Button(
+        "禁漫中心",
+        function()
+        getgenv().LS="禁漫中心" loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/ng/main/jmlllllllIIIIlllllII.lua"))()---公益 大约65个服务器 祝好---公益 暑假无聊 进群：930667114 找群主领取禁漫天堂 轻松快乐
+        end)
+        
+        credits:Button(
+        "皮脚本",
+        function()
+        getgenv().XiaoPi="皮脚本QQ群1002100032" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+        end)
+        
+        credits:Button(
+        "达脚本",
+        function()
+        xiaoda = "作者_小达"Xiaoda = "作者QQ_3491629303"XiaoDa = "QQ群_705257336"loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\49\51\51\117\102\117\100\104\100\117\47\72\76\68\72\81\86\81\82\80\66\47\109\97\105\110\47\81\85\81\34\41\41\40\41\10")()
+        end)
+        
+        credits:Button(
+        "中二病是最强的",
+        function()
+        loadstring(game:HttpGet("https://github.com/user-attachments/files/16541230/default.txt"))()
+        end)
+        
+        credits:Button(
+        "TianV1Sec脚本（已失效)",
+        function()
+        LAT = "QQ3422265683" TianV1QQqun= "495186854"loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1Sec/main/TianV1Sec"))()
         end)
