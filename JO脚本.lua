@@ -124,6 +124,10 @@ end)
         function()
         loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
         end)
+        
+        credits:Toggle("夜视", "", false, function(state)
+	spawn(function() while task.wait() do if Light then game.Lighting.Ambient = Color3.new(1, 1, 1) else game.Lighting.Ambient = Color3.new(0, 0, 0) end end end)
+end)
 
 credits:Button(
         "点击传送工具",
@@ -309,8 +313,7 @@ creditsHUB:Button(
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
         end)
-    
-    
+   
     local creds = window:Tab("Ficsh", "7733770599")
     local credits = creds:section("内容", true)
     
