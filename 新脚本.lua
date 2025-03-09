@@ -311,3 +311,248 @@ creditsHUB:Button(
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
         end)
+        
+        local creds = window:Tab("Ficsh", "7733770599")
+    local credits = creds:section("内容", true)
+    
+    credits:Button(
+        "功能齐全的脚本",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/wZBEgHFk"))()
+        end)
+        
+        credits:Button(
+        "Ficsh汉化脚本",
+        function()
+        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\103\105\116\104\117\98\46\99\111\109\47\88\105\97\111\89\117\110\85\119\85\47\88\105\97\111\89\117\110\85\119\85\47\114\97\119\47\109\97\105\110\47\83\99\114\105\112\116\37\50\70\70\105\115\99\104\37\50\48\67\78\37\50\48\86\101\114\115\105\111\110\34\44\32\116\114\117\101\41\41\40\41\10")()
+        end)
+        
+        credits:Button(
+        "卖掉手上拿着的鱼",
+        function()
+        game:GetService("ReplicatedStorage").events.Sell:InvokeServer()
+        end)
+        
+        credits:Button(
+        "卖掉背包所有的鱼(稀有鱼不会被卖)",
+        function()
+        game:GetService("ReplicatedStorage").events.SellAll:InvokeServer()
+        end)
+        
+        credits:Button(
+        "传送到深度",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(943.756958, -706.108398, 1251.77087, -0.386100113, 0.284740716, -0.87741065, 0, 0.951167107, 0.308676451, 0.92245692, 0.119180016, -0.367245734)
+        end)
+        
+        credits:Button(
+        "传送到守卫祭坛",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1309.84265, -796.916199, -107.134315, -0.922893524, 0.152973562, -0.353364706, 0, 0.917698741, 0.397276968, 0.385055184, 0.366644353, -0.846938312)
+        end)
+        
+        credits:Button(
+        "传送到深渊",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1653.52563, -199.001068, -2841.93066, -0.975113094, -0.126666948, 0.181961268, 0, 0.820724964, 0.571323395, -0.22170797, 0.557104945, -0.800299704)
+        end)
+        
+        credits:Button(
+        "传送到被遗弃的海岸",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2507.44141, 143.233383, 1563.09326, -0.998476744, -0.0264155734, 0.0484404489, 0, 0.877945065, 0.478761524, -0.0551748052, 0.478032261, -0.876607716)
+        end)
+        
+        credits:Button(
+        "传送到购买改变天气图腾的地点",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1149.55713, 145.805634, -1056.40002, 0.99958992, 0.0150282877, -0.0243737847, 0, 0.851205349, 0.524832726, 0.0286344327, -0.524617493, 0.850856364)
+        end)
+    
+        local creds = window:Tab("火箭发射器", "7733770599")
+    local creditsML = creds:section("功能", true)   
+   
+creditsML:Button(
+        "自动收集燃料",
+        function()
+          isFuelScoopEnabled = ARL while true do wait() if isFuelScoopEnabled then for i, h in pairs(game.Players.LocalPlayer.Character:GetChildren()) do if h:IsA("Tool") and h.Name == "FuelScoop" then h:Activate() end end end end  
+        end
+    )
+    
+creditsML:Button(
+        "登上火箭",
+        function()   
+                 game:GetService("ReplicatedStorage"):WaitForChild("BoardRocket"):FireServer()
+        end
+    )   
+   
+creditsML:Button(
+        "将玩家从所有座位移除",
+        function()
+            game:GetService("ReplicatedStorage"):WaitForChild("RemovePlayer"):FireServer()
+        end
+    )
+   
+local creditsDSB = creds:section("传送内容", true)
+      
+creditsDSB:Button(
+        "发射台岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-123.15931701660156, 2.7371432781219482, 3.491959810256958)
+        end
+    )   
+   
+creditsDSB:Button(
+        "白云岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-76.13252258300781, 170.55825805664062, -60.4516716003418)
+        end
+    )
+    
+creditsDSB:Button(
+        "漂浮岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-66.51714324951172, 720.4866333007812, -5.391753196716309)
+        end
+    )   
+   
+creditsDSB:Button(
+        "卫星岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-34.2462043762207, 1429.4990234375, 1.3739361763000488)
+        end
+    )
+    
+creditsDSB:Button(
+        "蜜蜂迷宫岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(6.5361199378967285, 3131.249267578125, -29.759048461914062)
+        end
+    )   
+   
+creditsDSB:Button(
+        "月球人援救岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7.212917804718018, 5016.341796875, -19.815933227539062)
+        end
+    )
+    
+    creditsDSB:Button(
+        "暗物质岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(68.43186950683594, 6851.94091796875, 7.890637397766113)
+        end
+    )   
+   
+creditsDSB:Button(
+        "太空岩石岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(49.92888641357422, 8942.955078125, 8.674375534057617)
+        end
+    )
+    
+creditsDSB:Button(
+        "零号火星岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(54.44503402709961, 11270.0927734375, -1.273137092590332)
+        end
+    )   
+   
+creditsDSB:Button(
+        "太空水晶岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11.579089164733887, 15295.6318359375, -27.54974365234375)
+        end
+    )
+    
+creditsDSB:Button(
+        "月球浆果岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-14.601255416870117, 18410.9609375, 0.9418511986732483)
+        end
+    )   
+   
+creditsDSB:Button(
+        "铺路实岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3.272758960723877, 22539.494140625, 63.283935546875)
+        end
+    )
+    
+creditsDSB:Button(
+        "流星岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-45.515689849853516, 27961.560546875, -7.358333110809326)
+        end
+    )   
+   
+creditsDSB:Button(
+        "升级岛",
+        function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2.7595248222351074, 33959.98828125, 53.93095397949219)
+        end
+    )
+    
+creditsDSB:Button(
+        "QB火箭发射器",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/xinhaoxian2/QB/main/QB%E7%81%AB%E7%AE%AD%E5%8F%91%E5%B0%84%E6%A8%A1%E6%8B%9F%E5%99%A8.lua"))()
+        end
+    )
+   
+creditsDSB:Button(
+        "Dizzy HUB脚本",
+        function()
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/dizyhvh/rbx_scripts/main/321_blast_off_simulator')))()
+        end
+    )
+    
+local creds = window:Tab("被遗弃", "91558537728361")
+    local credits = creds:section("被遗弃", true)
+    
+    credits:Button(
+        "被遗弃脚本(好用",
+        function()
+        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/SilkScripts/AppleStuff/refs/heads/main/AppleFSKV2")))()
+        end)
+    
+        local creds = window:Tab("河北唐县", "7733770599")
+    local Tab21 = creds:section("脚本内容", true)
+    
+    Tab21:Label("自动刷钱 需要成为送货司机")
+local virtualUser = game:GetService('VirtualUser')
+virtualUser:CaptureController()
+
+function teleportTo(CFrame) 
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
+end
+
+_G.autoFarm = false
+
+function autoFarm()
+	while _G.autoFarm do
+		fireclickdetector(game:GetService("Workspace").DeliverySys.Misc["Package Pile"].ClickDetector)
+		task.wait(2.2)
+		for _,point in pairs(game:GetService("Workspace").DeliverySys.DeliveryPoints:GetChildren()) do
+			if point.Locate.Locate.Enabled then
+				teleportTo(point.CFrame)
+			end
+		end
+		task.wait(0)
+	end
+end
+
+Tab21:Toggle("自动刷钱","text",false,function(value)
+_G.autoFarm = value
+	if value then
+		autoFarm()
+	end
+end)
+
+Tab21:Button(
+        "自动刷钱【其余脚本】",
+        function()
+            loadstring(game:HttpGet("https://scriptblox.com/raw/Update-V3.10-T-ang-County-Hebei-Auo-Farm-15577"))()
+        end
+    )
+    
