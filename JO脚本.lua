@@ -107,12 +107,7 @@ end)
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Permanent-Headless-And-korblox-Script-4140"))()
         end)
         
-        credits:Button(
-        "无限跳",
-        function()
-         loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()   
-        end
-    )
+ 
     
     credits:Button(
         "踏空行走",
