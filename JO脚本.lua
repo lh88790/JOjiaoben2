@@ -50,15 +50,13 @@ credits:Slider('修改跳跃', 'Sliderflag',  16, 16, 999999,false, function(Val
 	credits:Slider('修改重力', 'Sliderflag',  190, 190, 999999,false, function(Value)
 	game.Workspace.Gravity = Value
 	end)
-	
-	
+
 	credits:Button(
         "工具包",
         function()
 	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
 end)
 
-        
         credits:Button(
         "指令脚本",
         function()
@@ -500,7 +498,7 @@ creditsDSB:Button(
         function()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/xinhaoxian2/QB/main/QB%E7%81%AB%E7%AE%AD%E5%8F%91%E5%B0%84%E6%A8%A1%E6%8B%9F%E5%99%A8.lua"))()
         end
-    )   
+    )
    
 creditsDSB:Button(
         "Dizzy HUB脚本",
