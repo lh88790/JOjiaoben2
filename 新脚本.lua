@@ -216,3 +216,98 @@ local creds = window:Tab("整活脚本!", "7733770599")
         function()
         loadstring(game:HttpGet("https://web.archive.org/web/20240323091819/https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
         end)
+        
+        local creds = window:Tab("力量传奇", "7733770599")
+    local credits = creds:section("力量传奇内容", true)
+    
+    credits:Button(
+        "力量传奇1",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
+        end)
+        
+        credits:Button(
+        "力量传奇2",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/refs/heads/main/%E5%AE%89%E8%84%9A%E6%9C%AC.lua')))()
+        end)
+        
+        local creds = window:Tab("极速传奇", "7733770599")
+    local credits = creds:section("极速传奇内容", true)
+    
+    credits:Button(
+        "极速传奇1",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/refs/heads/main/%E5%AE%89%E8%84%9A%E6%9C%AC.lua')))()
+        end)
+        
+        credits:Button(
+        "极速传奇2",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
+        end)
+        
+        local creds = window:Tab("忍者传奇", "7733770599")
+    local credits = creds:section("忍者传奇内容", true)
+    
+    credits:Button(
+        "忍者传奇1",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/refs/heads/main/%E5%AE%89%E8%84%9A%E6%9C%AC.lua')))()
+        end)
+        
+        credits:Button(
+        "忍者传奇2",
+        function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
+        end)
+        
+        local creds = window:Tab("破坏者谜团", "7733770599")
+    local creditsHUB = creds:section("脚本内容", true)
+
+creditsHUB:Button(
+        "Highlight MM2",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main"))()
+        end
+    )   
+   
+   creditsHUB:Button("复制上面卡密", function()
+    setclipboard("hlvipcomingsoon")
+end)
+   
+   creditsHUB:Button(
+        "Ghost Hub",
+        function()
+           loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))() 
+        end
+    )
+    
+creditsHUB:Button(
+        "YARHM",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+        end
+    )
+   
+   creditsHUB:Button(
+        "修改武器",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/trdrock/mm2/main/KosyHub"))()
+        end
+    )
+    
+        local creds = window:Tab("BF", "7733770599")
+    local credits = creds:section("BF", true)
+    
+    credits:Button(
+        "BF好用的脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Kncrypt/refs/heads/main/sources/BloxFruit.lua"))()
+    end)
+    
+    credits:Button(
+        "BF外网脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+        end)
