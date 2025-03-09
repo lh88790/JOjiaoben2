@@ -51,6 +51,10 @@ credits:Slider('修改跳跃', 'Sliderflag',  16, 16, 999999,false, function(Val
 	game.Workspace.Gravity = Value
 	end)
 	
+	credits:Slider('相机焦距【正常为70】', 'Sliderflag', 70, 0.1, 250, false, function(v)
+        game.Workspace.CurrentCamera.FieldOfView = v
+end)
+	
 	credits:Button(
         "工具包",
         function()
@@ -107,6 +111,20 @@ end)
         end)
         
         credits:Button(
+        "无限跳",
+        function()
+         loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()   
+        end
+    )
+    
+    credits:Button(
+        "踏空行走",
+        function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+        end
+    )
+        
+        credits:Button(
         "R15变R6",
         function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-R6-Animations-on-R15-16865"))()
@@ -130,9 +148,7 @@ credits:Button(
         mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
         end)
 
-credits:Toggle("夜视", "", false, function(state)
-	spawn(function() while task.wait() do if Light then game.Lighting.Ambient = Color3.new(1, 1, 1) else game.Lighting.Ambient = Color3.new(0, 0, 0) end end end)
-end)
+
 
 credits:Button(
         "透视",
@@ -164,17 +180,7 @@ credits:Button(
         game.Players.LocalPlayer.Character.Humanoid.Health=0
 end)
 
-credits:Button(
-        "无限跳",
-        function()
-        Jump = Value
-        game.UserInputService.JumpRequest:Connect(function()
-            if Jump then
-                game.Players.LocalPlayer.Character.Humanoid:ChangeState("Jumping")
-            end
-        end)
-    end)
-    
+
     credits:Button(
         "铁拳",
         function()
@@ -324,7 +330,8 @@ creditsHUB:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
         end)
     
-    local creds = window:Tab("摊位世界", "6035145364")
+    local creds = window:Tab("摊位世界", 
+    "6035145364")
     local credits = creds:section("脚本内容", true)
     
     credits:Button(
@@ -351,7 +358,7 @@ creditsHUB:Button(
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(593.359436, 7.81369877, 185.69545, -1, 0, 0, 0, 1, 0, 0, 0, -1)
     end)
     
-    credits:Button(
+       credits:Button(
         "金宝箱5",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(598.000244, -16.271862, 693.374512, 0, 0, 1, 0, 1, -0, -1, 0, 0)
@@ -499,11 +506,7 @@ creditsHUB:Button(
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-944.478271, 78.2007751, 243.1465, 1, 0, 0, 0, 1, 0, 0, 0, 1)
         end)
         
-        credits:Button(
-        "金宝箱28",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(496.194214, 102.002434, 19.4965363, -1, 0, 0, 0, 1, 0, 0, 0, -1)
-        end)
+        
         
         credits:Button(
         "金宝箱29",
