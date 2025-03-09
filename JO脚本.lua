@@ -51,14 +51,12 @@ credits:Slider('修改跳跃', 'Sliderflag',  16, 16, 999999,false, function(Val
 	game.Workspace.Gravity = Value
 	end)
 	
-	
 	credits:Button(
         "工具包",
         function()
 	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
 end)
 
-        
         credits:Button(
         "指令脚本",
         function()
@@ -309,7 +307,6 @@ creditsHUB:Button(
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
         end)
-    
     
     local creds = window:Tab("Ficsh", "7733770599")
     local credits = creds:section("内容", true)
