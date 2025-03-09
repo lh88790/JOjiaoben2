@@ -556,3 +556,262 @@ Tab21:Button(
         end
     )
     
+    local creds = window:Tab("doors", "7733770599")
+    local credits = creds:section("doors", true)
+    
+    credits:Button(
+        "doors1",
+        function()
+ loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+ end)
+ 
+ credits:Button(
+        "doors2",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
+        end)
+        
+    local creds = window:Tab("刀刃球", "7733770599")
+    local credits = creds:section("刀刃球", true)
+    
+    credits:Button(
+        "刀刃球",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Serwxl/BladeBall_AutoParry/refs/heads/main/Autoparry"))()
+        end)
+    
+       local creds = window:Tab("奶酪逃生", "7733770599")
+    local credits = creds:section("奶酪逃生", true)
+    
+    credits:Button(
+        "奶酪逃生1",
+        function()
+        loadstring(game:HttpGet("https://pastefy.app/IIpzN8f5/raw"))()
+        end)
+    
+    local creds = window:Tab("战斗勇士", "7733770599")
+    local credits = creds:section("脚本内容", true)    
+    
+credits:Button(
+        "无限体力1",
+        function()
+            loadstring(game:HttpGet("https://shz.al/~KSK"))()
+        end
+    )
+   
+   credits:Button(
+        "无限体力2",
+        function()
+            for i,v in pairs(getgc(true)) do
+   if typeof(v) == "table" and rawget(v, "getIsMaxed") then
+       v.getIsMaxed = function()
+           return false
+       end
+       v.getFlags = function()
+           return 1
+       end
+       v.addFlags = function(a,b)
+           a:setFlags(0)
+           return
+       end
+   end
+   -- "There was another script here but it caused the user to crash (lag out), so it had to be removed" -KiwisASkid --
+   if typeof(v) == "table" and rawget(v, "spawnCharacter") then
+       local oldfunc = v.spawnCharacter
+       v.SpawnCharacter = function(a)
+           for _,f in pairs(getgc(true)) do
+               if typeof(f) == "table" and rawget(f, "getIsMaxed") then
+                   f.getIsMaxed = function()
+                       return false
+                   end
+                   f.getFlags = function()
+                       return 1
+                   end
+                   f.addFlags = function(aa,b)
+                       aa:setFlags(0)
+                       return
+                   end
+               end
+           end
+       end
+   end
+   if typeof(v) == "table" and rawget(v, "getCanJump") then
+       v.getCanJump = function()
+           return true
+       end
+   end
+   if typeof(v) == "table" and rawget(v, "JUMP_DELAY_ADD") then
+       v.JUMP_DELAY_ADD = 0.5
+   end
+   if typeof(v) == "table" and rawget(v, "_setStamina") then
+       v._setStamina = function(a, b)
+           a._stamina = math.huge
+           a._staminaChangedSignal:Fire(99)
+       end
+   end
+end
+game.StarterGui:SetCore("SendNotification", {Title = "你好", Text = "Script loaded, "..game.Players.LocalPlayer.DisplayName..".", Duration = 4,})
+        end
+    )
+    
+credits:Button(
+        "Zab HUB",
+        function()
+            loadstring(game:HttpGet('https://itots.tk/zaphub/ZapHubFreeVersion'))()
+        end
+    )
+   
+ credits:Button(
+        "反盾",
+        function()
+            local lp = game.Players.LocalPlayer
+
+local animationInfo = {}
+
+function getInfo(id)
+  local success, info = pcall(function()
+      return game:GetService("MarketplaceService"):GetProductInfo(id)
+  end)
+  if success then
+      return info
+  end
+  return {Name=''}
+end
+function block(player)
+  keypress(0x46)
+  wait()
+  keyrelease(0x46)
+end
+
+local AnimNames = {
+  'Slash',
+  'Swing',
+  'Sword'
+}
+
+function playerAdded(v)
+    local function charadded(char)
+      local humanoid = char:WaitForChild("Humanoid", 5)
+      if humanoid then
+          humanoid.AnimationPlayed:Connect(function(track)
+              local info = animationInfo[track.Animation.AnimationId]
+              if not info then
+                  info = getInfo(tonumber(track.Animation.AnimationId:match("%d+")))
+                  animationInfo[track.Animation.AnimationId] = info
+              end
+             
+              if (lp.Character and lp.Character:FindFirstChild("Head") and v.Character:FindFirstChild("Head")) then
+                  local mag = (v.Character.Head.Position - lp.Character.Head.Position).Magnitude
+                  if mag < 15  then
+                     
+                      for _, animName in pairs(AnimNames) do
+                          if info.Name:match(animName) then
+                              pcall(block, v)
+                          end
+                      end
+                     
+                  end
+              end
+          end)
+      end
+  end
+ 
+  if v.Character then
+      charadded(v.Character)
+  end
+  v.CharacterAdded:Connect(charadded)
+end
+
+for i,v in pairs(game.Players:GetPlayers()) do
+   if v ~= lp then
+       playerAdded(v)
+   end
+end
+
+game.Players.PlayerAdded:Connect(playerAdded)
+        end
+    )
+    
+credits:Button(
+        "敌人打不死",
+        function()
+            local HRP = game.Players.LocalPlayer.Character.HumanoidRootPart
+local spawnbox = workspace.SpawnBox
+
+HRP.CFrame = spawnbox.SpawnPart.CFrame
+        end
+    )
+   
+   credits:Button(
+        "KK Hub",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaaaKK/cwhb/main/cw.txt"))()
+        end
+    )
+    
+credits:Button(
+        "淘汰光环",
+        function()
+            loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()
+        end
+    )
+   
+   credits:Button(
+        "TopG Hub",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/leakediz/top-g/main/combat%20warriors"))()
+        end
+    )
+    
+credits:Button(
+        "nova Hub",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/novahub"))()
+        end
+    )
+   
+        
+
+        local creds = window:Tab("最强战场", "7733770599")
+    local credits = creds:section("最强战场内容", true)
+    
+    credits:Button(
+        "KJ",
+        function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-I-found-a-person-mode-KJ-fake-one-not-mine-19405"))()
+        end)
+        
+        credits:Button(
+        "KADE HUB",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/Work/main/latest.lua"))()
+        end)
+        
+        credits:Button(
+        "Aquairus HUB",
+        function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-KJ-Animations-Hub-FE-Keyless-21099"))()
+        end)
+        
+        credits:Button(
+        "外网超强脚本(有隐身)",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()
+        end)
+        
+        credits:Button(
+        "垃圾桶战神",
+        function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
+        
+       credits:Button(
+        "改恶狼动作(包含两个功能)",
+        function()
+        loadstring(game:HttpGet("https://paste.ee/r/AnZ5j"))()
+        end)
+        
+        credits:Button(
+        "自动格挡",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
+        end)
