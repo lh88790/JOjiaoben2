@@ -107,10 +107,6 @@ end)
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Permanent-Headless-And-korblox-Script-4140"))()
         end)
         
- 
-    
-
-        
         credits:Button(
         "R15变R6",
         function()
@@ -134,8 +130,6 @@ credits:Button(
         function()
         mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
         end)
-
-
 
 credits:Button(
         "透视",
@@ -166,7 +160,6 @@ credits:Button(
         function()
         game.Players.LocalPlayer.Character.Humanoid.Health=0
 end)
-
 
     credits:Button(
         "铁拳",
