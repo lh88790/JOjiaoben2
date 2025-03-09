@@ -376,6 +376,9 @@ creditsHUB:Button(
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4186.00439, 12.3269119, 696.946777, 0.999653399, 0.0263244659, -0.000327169982, -0.0263264924, 0.999584496, -0.0117363017, 1.80821808e-05, 0.0117408466, 0.999931097)
         end)
         
+        local creds = window:Tab("摊位世界2", "6035145364")
+    local credits = creds:section("内容", true)
+        
         credits:Button(
         "金宝箱9",
         function()
@@ -418,7 +421,7 @@ creditsHUB:Button(
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5142.07373, 37.5692711, 1290.28235, 1, 0, 0, 0, 1, 0, 0, 0, 1)
         end)
         
-        local creds = window:Tab("摊位世界功能另一半", "6035145364")
+        local creds = window:Tab("摊位世界3", "6035145364")
     local credits = creds:section("内容", true)
         
         credits:Button(
@@ -474,6 +477,9 @@ creditsHUB:Button(
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-942.799255, -512.949829, -652.204041, -1.1920929e-07, -0, -1.00000012, 0, 1, -0, 1.00000012, 0, -1.1920929e-07)
         end)
+        
+       local creds = window:Tab("摊位世界4", "6035145364")
+    local credits = creds:section("内容", true)
         
         credits:Button(
         "金宝箱25",
