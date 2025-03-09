@@ -418,6 +418,9 @@ creditsHUB:Button(
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5142.07373, 37.5692711, 1290.28235, 1, 0, 0, 0, 1, 0, 0, 0, 1)
         end)
         
+        local creds = window:Tab("摊位世界功能另一半", "6035145364")
+    local credits = creds:section("内容", true)
+        
         credits:Button(
         "金宝箱16",
         function()
