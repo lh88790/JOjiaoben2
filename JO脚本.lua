@@ -109,12 +109,7 @@ end)
         
  
     
-    credits:Button(
-        "踏空行走",
-        function()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
-        end
-    )
+
         
         credits:Button(
         "R15变R6",
