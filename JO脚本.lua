@@ -51,9 +51,6 @@ credits:Slider('修改跳跃', 'Sliderflag',  16, 16, 999999,false, function(Val
 	game.Workspace.Gravity = Value
 	end)
 	
-	credits:Slider('相机焦距【正常为70】', 'Sliderflag', 70, 0.1, 250, false, function(v)
-        game.Workspace.CurrentCamera.FieldOfView = v
-end)
 	
 	credits:Button(
         "工具包",
