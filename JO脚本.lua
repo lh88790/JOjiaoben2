@@ -127,6 +127,12 @@ end)
         loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
         end)
         
+        credits:Button(
+        "esp和自瞄",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/UNIVERSAL%20AIMBOT%20V2"))()
+        end)
+        
         credits:Toggle("夜视", "", false, function(state)
 	spawn(function() while task.wait() do if Light then game.Lighting.Ambient = Color3.new(1, 1, 1) else game.Lighting.Ambient = Color3.new(0, 0, 0) end end end)
 end)
@@ -190,7 +196,7 @@ end)
 credits:Button(
         "单个甩人",
         function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/refs/heads/main/Roblox%20fling%20script'))()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
         end)
         
         credits:Button(
@@ -799,6 +805,12 @@ Tab21:Button(
         "KADE HUB",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/Work/main/latest.lua"))()
+        end)
+        
+        credits:Button(
+        "饿狼自动1+",
+        function()
+        loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
         end)
         
         credits:Button(
