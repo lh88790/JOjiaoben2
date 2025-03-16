@@ -129,7 +129,7 @@ end)
         
         credits:Button(
         "ESP",
-        Callback = function()
+        function()
 	local Players = game:GetService("Players"):GetChildren()
 local RunService = game:GetService("RunService")
 local highlight = Instance.new("Highlight")
