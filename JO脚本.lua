@@ -130,7 +130,8 @@ end)
         credits:Button(
         "ESP",
         function()
-	loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/UNIVERSALESPLTX/main/README.md'),true))()
+	end)
 	
         credits:Button(
         "自瞄",
