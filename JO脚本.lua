@@ -128,9 +128,9 @@ end)
         end)
         
         credits:Button(
-        "esp和自瞄",
+        "自瞄和ESP",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/UNIVERSAL%20AIMBOT%20V2"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Patheticcs/RivalsScript/refs/heads/main/main.lua",true))()
         end)
         
         credits:Toggle("夜视", "", false, function(state)
@@ -196,7 +196,7 @@ end)
 credits:Button(
         "单个甩人",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/yzeedw/Mortalv2-main/main/UNIVERSAL%20AIMBOT%20V2"))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/refs/heads/main/Roblox%20fling%20script'))()
         end)
         
         credits:Button(
