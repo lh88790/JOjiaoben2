@@ -128,9 +128,15 @@ end)
         end)
         
         credits:Button(
-        "自瞄和ESP",
+        "ESP",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Patheticcs/RivalsScript/refs/heads/main/main.lua",true))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY"))()
+        end)
+        
+        credits:Button(
+        "自瞄",
+        function()
+        loadstring(game:HttpGet('https://rentry.co/forkoritothegoat/raw'))()
         end)
         
         credits:Toggle("夜视", "", false, function(state)
