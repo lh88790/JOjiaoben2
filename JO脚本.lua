@@ -110,6 +110,12 @@ end)
         end)
         
         credits:Button(
+        "子追",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/1AJ69eRG"))()
+        end)
+        
+        credits:Button(
         "R15变R6",
         function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-R6-Animations-on-R15-16865"))()
@@ -440,6 +446,19 @@ local creds = window:Tab("整活脚本!", "91558537728361")
         function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/refs/heads/main/%E5%AE%89%E8%84%9A%E6%9C%AC.lua')))()
         end)
+        
+        local creds = window:Tab("犯罪", "6035145364")
+    local credits = creds:section("犯罪内容", true)
+    
+    credits:Button(
+        "外网超强脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PresidentAnvil/crimlight/main/criminologylight.lua"))()
+        end)
+        
+        bin:Button("复制作者上面↑的卡密", function()
+    setclipboard("JD86EIdjL1Dzx8q")
+end)
         
         local creds = window:Tab("极速传奇", "91558537728361")
     local credits = creds:section("极速传奇内容", true)
