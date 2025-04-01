@@ -480,21 +480,9 @@ local creds = window:Tab("整活脚本!", "91558537728361")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/PresidentAnvil/temp-criminology/refs/heads/main/criminology.lua"))()
         end)
         
-        credits:Button(
-        "防封(仅电脑有用",
-        function()
-        for _, value in next, getgc(true) do 
-    if typeof(value) == 'table' then
-        if rawget(value, "indexInstance") or rawget(value, "newindexInstance") or rawget(value, "newIndexInstance") then 
-            value.tvk = {"kick", function() return task.wait(9e9) end} 
-        end
-    end
-end
         
         
-        bin:Button("复制作者上面↑的卡密", function()
-    setclipboard("JD86EIdjL1Dzx8q")
-end)
+
         
         local creds = window:Tab("极速传奇", "91558537728361")
     local credits = creds:section("极速传奇内容", true)
