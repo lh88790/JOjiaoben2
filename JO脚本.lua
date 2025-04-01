@@ -451,10 +451,46 @@ local creds = window:Tab("整活脚本!", "91558537728361")
     local credits = creds:section("犯罪内容", true)
     
     credits:Button(
-        "外网超强脚本",
+        "criminologylight",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/PresidentAnvil/crimlight/main/criminologylight.lua"))()
         end)
+        
+        credits:Button(
+        "ghost",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/qwertyu4t55567rgdf/fling/refs/heads/main/Loader.lua"))()
+        end)
+        
+        credits:Button(
+        "不知道什么脚本",
+        function()
+        loadstring(game:HttpGet("https://you.whimper.xyz/sources/infernium/Criminality.lua"))()
+        end)
+        
+        credits:Button(
+        "功能齐全的脚本(有bang追踪手机可用这个调速度",
+        function()
+        writefile("Rayfield/Key System/Key123.rfld","NoHomo");loadstring(game:HttpGet("https://raw.githubusercontent.com/LisSploit/FemboysHubBoosr/2784d6c4ede4340ad9af4865828d915ffc26c7bb/Criminality"))()
+        end)
+        
+        credits:Button(
+        "criminology",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PresidentAnvil/temp-criminology/refs/heads/main/criminology.lua"))()
+        end)
+        
+        credits:Button(
+        "防封(仅电脑有用",
+        function()
+        for _, value in next, getgc(true) do 
+    if typeof(value) == 'table' then
+        if rawget(value, "indexInstance") or rawget(value, "newindexInstance") or rawget(value, "newIndexInstance") then 
+            value.tvk = {"kick", function() return task.wait(9e9) end} 
+        end
+    end
+end
+        
         
         bin:Button("复制作者上面↑的卡密", function()
     setclipboard("JD86EIdjL1Dzx8q")
@@ -742,6 +778,12 @@ local creds = window:Tab("被遗弃", "91558537728361")
         "被遗弃脚本(好用",
         function()
         loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/SilkScripts/AppleStuff/refs/heads/main/AppleFSKV2")))()
+        end)
+        
+        credits:Button(
+        "被遗弃脚本2(有中文且好用",
+        function()
+        loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
         end)
     
         local creds = window:Tab("河北唐县", "91558537728361")
