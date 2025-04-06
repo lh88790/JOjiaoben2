@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/VeaMSRZK"))()
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/lh88790/JOjiaoben2/main/VeaMSRZK.lua"))()
 OrionLib:MakeNotification({
                     Name = "JOJOnb！！！",
                     Content = "JO脚本已为您加载成功",
@@ -36,7 +36,7 @@ end)
     setclipboard("万華鏡血輪眼の幻術の中にひっそりとしているのだろう")
 end)
 
-local creds = window:Tab("通用", "7733770599")
+local creds = window:Tab("通用", "992417778")
     local credits = creds:section("通用内容", true)
     
 credits:Slider('修改速度', 'WalkspeedSlider', 16, 16, 99999,false, function(Value)
