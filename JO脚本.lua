@@ -15,7 +15,7 @@ Start = tick()
 Start = tick()
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/XK%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2.txt", true))()
     local window = library:new("JO脚本【测试版】")
-    local creds = window:Tab("关于", "91558537728361")
+    local creds = window:Tab("关于", "14990300891")
     local bin = creds:section("信息", true)
     bin:Label("你的注入器:" .. identifyexecutor())
     bin:Label("你的地图id:"..game.PlaceId)
@@ -37,7 +37,7 @@ end)
     setclipboard("万華鏡血輪眼の幻術の中にひっそりとしているのだろう")
 end)
 
-local creds = window:Tab("通用", "91558537728361")
+local creds = window:Tab("通用", "14990300891")
     local credits = creds:section("通用内容", true)
     
 credits:Slider('修改速度', 'WalkspeedSlider', 16, 16, 99999,false, function(Value)
@@ -608,7 +608,7 @@ credits:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
         end)
         
-        local creds = window:Tab("摊位世界", "91558537728361")
+        local creds = window:Tab("摊位世界", "14990300891")
     local credits = creds:section("脚本内容", true)
     
     credits:Button(
@@ -787,7 +787,7 @@ credits:Button(
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-949.774231, 14.2076721, 94.6968689, 0, 0, 1, 0, 1, -0, -1, 0, 0)
         end)
 
-local creds = window:Tab("整活脚本!", "91558537728361")
+local creds = window:Tab("整活脚本!", "14990300891")
     local credits = creds:section("整活脚本!", true)
     
     credits:Button(
@@ -802,7 +802,7 @@ local creds = window:Tab("整活脚本!", "91558537728361")
         loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
         end)
         
-        local creds = window:Tab("用来制作脚本的", "91558537728361")
+        local creds = window:Tab("用来制作脚本的", "14990300891")
     local credits = creds:section("制作脚本用的", true)
     
     credits:Button(
@@ -871,7 +871,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         
 
         
-        local creds = window:Tab("极速传奇", "91558537728361")
+        local creds = window:Tab("极速传奇", "14990300891")
     local credits = creds:section("极速传奇内容", true)
     
     credits:Button(
@@ -886,7 +886,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
         end)
         
-        local creds = window:Tab("忍者传奇", "91558537728361")
+        local creds = window:Tab("忍者传奇", "14990300891")
     local credits = creds:section("忍者传奇内容", true)
     
     credits:Button(
@@ -901,7 +901,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
         end)
         
-        local creds = window:Tab("破坏者谜团", "91558537728361")
+        local creds = window:Tab("破坏者谜团", "14990300891")
     local creditsHUB = creds:section("脚本内容", true)
 
 creditsHUB:Button(
@@ -963,7 +963,7 @@ creditsHUB:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaaaKK/cwhb/main/cw.txt"))()
         end)
     
-        local creds = window:Tab("BF", "91558537728361")
+        local creds = window:Tab("BF", "14990300891")
     local credits = creds:section("BF", true)
     
     credits:Button(
@@ -978,7 +978,7 @@ creditsHUB:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
         end)
         
-        local creds = window:Tab("Ficsh", "91558537728361")
+        local creds = window:Tab("Ficsh", "14990300891")
     local credits = creds:section("内容", true)
     
     credits:Button(
@@ -1035,7 +1035,7 @@ creditsHUB:Button(
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1149.55713, 145.805634, -1056.40002, 0.99958992, 0.0150282877, -0.0243737847, 0, 0.851205349, 0.524832726, 0.0286344327, -0.524617493, 0.850856364)
         end)
     
-        local creds = window:Tab("火箭发射器", "91558537728361")
+        local creds = window:Tab("火箭发射器", "14990300891")
     local creditsML = creds:section("功能", true)   
    
 creditsML:Button(
@@ -1173,7 +1173,7 @@ creditsDSB:Button(
         end
     )
     
-local creds = window:Tab("被遗弃", "91558537728361")
+local creds = window:Tab("被遗弃", "14990300891")
     local credits = creds:section("被遗弃", true)
     
     credits:Button(
@@ -1188,7 +1188,7 @@ local creds = window:Tab("被遗弃", "91558537728361")
         loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
         end)
     
-        local creds = window:Tab("河北唐县", "91558537728361")
+        local creds = window:Tab("河北唐县", "14990300891")
     local Tab21 = creds:section("脚本内容", true)
     
     Tab21:Label("自动刷钱 需要成为送货司机")
@@ -1228,7 +1228,7 @@ Tab21:Button(
         end
     )
     
-    local creds = window:Tab("doors", "91558537728361")
+    local creds = window:Tab("doors", "14990300891")
     local credits = creds:section("doors", true)
     
     credits:Button(
@@ -1243,7 +1243,7 @@ Tab21:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
         end)
         
-    local creds = window:Tab("刀刃球", "91558537728361")
+    local creds = window:Tab("刀刃球", "14990300891")
     local credits = creds:section("刀刃球", true)
     
     credits:Button(
@@ -1252,7 +1252,7 @@ Tab21:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Serwxl/BladeBall_AutoParry/refs/heads/main/Autoparry"))()
         end)
     
-       local creds = window:Tab("奶酪逃生", "91558537728361")
+       local creds = window:Tab("奶酪逃生", "14990300891")
     local credits = creds:section("奶酪逃生", true)
     
     credits:Button(
@@ -1261,7 +1261,7 @@ Tab21:Button(
         loadstring(game:HttpGet("https://pastefy.app/IIpzN8f5/raw"))()
         end)
 
-        local creds = window:Tab("最强战场", "91558537728361")
+        local creds = window:Tab("最强战场", "14990300891")
     local credits = creds:section("最强战场内容", true)
     
     credits:Button(
@@ -1312,7 +1312,7 @@ Tab21:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
         end)
         
-        local creds = window:Tab("最强战场传送", "91558537728361")
+        local creds = window:Tab("最强战场传送", "14990300891")
     local credits = creds:section("传送内容", true)
     
         credits:Button(
@@ -1393,7 +1393,7 @@ Tab21:Button(
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1162.2137451171875, 816.7724609375, -807.6665649414062)
         end)
 
-local creds = window:Tab("其他脚本", "91558537728361")
+local creds = window:Tab("其他脚本", "14990300891")
     local credits = creds:section("其他脚本内容", true)
     
     credits:Button(
