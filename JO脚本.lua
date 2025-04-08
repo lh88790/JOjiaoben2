@@ -1452,8 +1452,9 @@ local creds = window:Tab("其他脚本", "91558537728361")
         
         credits:Button(
         "霖溺脚本",
-        KingTeam= "KingQQ新主群https://qm.qq.com/q/SU0hmhIvwk"loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/ShenJiaoBen/main/King-------------Script.txt"))()
         function()
+        KingTeam= "KingQQ新主群https://qm.qq.com/q/SU0hmhIvwk"loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/ShenJiaoBen/main/King-------------Script.txt"))()
+        end)
         
         
         credits:Button(
