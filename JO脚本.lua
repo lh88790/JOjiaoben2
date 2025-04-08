@@ -127,6 +127,15 @@ end)
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
         end)
+        
+        credits:Button(
+        "人物旋转",
+        function()
+        BY = "退休"
+script = "免费开源"
+QUN = "809771141"
+fling = loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/TUIXUI_qun-809771141/refs/heads/TUIXUI/fling"))()
+        end)
 
     credits:Button(
         "隐身",
