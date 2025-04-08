@@ -282,9 +282,7 @@ while task.wait() do
 	DB = false
 end
 
-	end 
-
-})
+	end)
 	
         credits:Button(
         "自瞄",
@@ -408,9 +406,7 @@ end
 end
 coroutine.wrap(TKDWQ_fake_script)()
 
-	end
-
-})
+	end)
     
 
 credits:Button(
@@ -442,9 +438,7 @@ credits:Button(
 
 		end)
 
-  	end
-
-})
+  	end)
 
 credits:Button(
         "飞行V3",
@@ -697,9 +691,7 @@ for _,x in next, Targets do
     end
 end
 
-  	end    
-
-})
+  	end)
          
 credits:Button(
         "单个甩人",
@@ -1559,11 +1551,6 @@ local creds = window:Tab("其他脚本", "91558537728361")
         getgenv().LS="禁漫中心" loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/ng/main/jmlllllllIIIIlllllII.lua"))()---公益 大约65个服务器 祝好---公益 暑假无聊 进群：930667114 找群主领取禁漫天堂 轻松快乐
         end)
         
-        credits:Button(
-        "白脚本破解版",
-        function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/LsrKtbPy"))()
-        end)
         
         credits:Button(
         "皮脚本(需加群组",
