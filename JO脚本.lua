@@ -817,8 +817,8 @@ local creds = window:Tab("整活脚本!", "91558537728361")
         loadstring(game:HttpGet("https://web.archive.org/web/20240323091819/https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
         end)
         
-        local creds = window:Tab("力量传奇", "91558537728361")
-    local credits = creds:section("力量传奇内容", true)
+        local creds = window:Tab("力量传奇石头类", "91558537728361")
+    local credits = creds:section("内容", true)
     
     credits:Toggle("自动传送到安全地方", "", false, function(rock)
         if place then
@@ -826,11 +826,6 @@ getgenv().place = true
 while getgenv().place do
 wait()
 game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-51.6716728, 32.2157211, 1290.41211, 0.9945544, 1.23613528e-08, -0.104218982, -7.58742402e-09, 1, 4.62031657e-08, 0.104218982, -4.51608102e-08, 0.9945544)
-end
-else
-getgenv().place = false
-wait()
-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-34.1635208, 3.67689133, 219.640869, 0.599920511, -2.24152163e-09, 0.800059617, 4.46125981e-09, 1, -5.43559087e-10, -0.800059617, 3.89536625e-09, 0.599920511)
 end
 end)
 
@@ -1039,6 +1034,9 @@ game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):UnequipTools()
 end
 end
 end)
+
+local creds = window:Tab("力量传奇跑步机类", "6035145364")
+    local credits = creds:section("内容", true)
 
 credits:Toggle("海滩跑步机10", false, function(treadmill)
     getgenv().spam = treadmill
@@ -1283,6 +1281,9 @@ RunService:UnbindFromRenderStep("move",
 end
 end)
 
+local creds = window:Tab("力量传奇深蹲架", "6035145364")
+    local credits = creds:section("内容", true)
+
 credits:Toggle("沙滩深蹲架", false, function(rack)
     if game.Players.LocalPlayer.leaderstats.Strength.Value >= 1000 then
 getgenv().spam = rack
@@ -1367,6 +1368,9 @@ game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
 end
 end)
 
+local creds = window:Tab("力量传奇引体向上类", "6035145364")
+    local credits = creds:section("内容", true)
+
 credits:Toggle("引体向上海滩", false, function(pull)
     if game.Players.LocalPlayer.leaderstats.Strength.Value >= 1000 then
 getgenv().spam = pull
@@ -1430,6 +1434,9 @@ if not getgenv().spam then
 game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
 end
 end)
+
+local creds = window:Tab("力量传奇卧推类", "6035145364")
+    local credits = creds:section("内容", true)
 
 credits:Toggle("卧推海滩", false, function(bench)
     if game.Players.LocalPlayer.leaderstats.Strength.Value >= 150 then
@@ -1559,6 +1566,9 @@ game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
 end
 end)
 
+local creds = window:Tab("力量传奇投掷类", "6035145364")
+    local credits = creds:section("内容", true)
+
 credits:Toggle("投掷海滩", false , function(lift)
     if game.Players.LocalPlayer.leaderstats.Strength.Value >= 3000 then
 getgenv().spam = lift
@@ -1645,6 +1655,9 @@ end)
 
 noCD = false
 punchCooldown = 0.35
+
+local creds = window:Tab("力量传奇实用类", "992417778")
+    local credits = creds:section("内容", true)
 
 credits:Toggle("自动挥拳", false, function(Value)
     autopunch = Value
