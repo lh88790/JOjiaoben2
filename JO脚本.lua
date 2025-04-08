@@ -808,7 +808,7 @@ local creds = window:Tab("整活脚本!", "992417778")
         credits:Button(
         "打飞机道具🤓(有些服务器用不了)",
         function()
-        loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-jerk-off-25958"))()
         end)
         
         local creds = window:Tab("用来制作脚本的", "992417778")
