@@ -820,9 +820,7 @@ local creds = window:Tab("整活脚本!", "91558537728361")
         local creds = window:Tab("力量传奇", "91558537728361")
     local credits = creds:section("力量传奇内容", true)
     
-    credits:Button(
-        "传送到安全地点",
-        function(place)
+    credits:Toggle("自动传送到安全地方", "", false, function(rock)
         if place then
 getgenv().place = true
 while getgenv().place do
