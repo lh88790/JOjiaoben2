@@ -20,11 +20,12 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINji
     bin:Label("你的注入器:" .. identifyexecutor())
     bin:Label("你的地图id:"..game.PlaceId)
     bin:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
-    bin:Label("基本全缝合，一些《自制》")    
+    bin:Label("基本全缝合，所以源码没有加密")    
     bin:Label("不知道更新(缝合)什么了")
+    bin:Label("本脚本可能很垃圾")
     bin:Label("正在努力制作此脚本")
     bin:Label("创作日期：忘了")
-    bin:Label("更新时间：2025年3月4日，只更新了一些小功能")
+    bin:Label("更新时间：2025年4月8日，只更新了一些小功能")
     
     bin:Button("复制作者qq", function()
     setclipboard("110")
@@ -134,10 +135,156 @@ end)
         end)
         
         credits:Button(
+        "隐身2",
+        function()
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))()
+        end)
+        
+        credits:Button(
         "ESP",
         function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/cool83birdcarfly02six/UNIVERSALESPLTX/main/README.md'),true))()
+        --//Toggle\\--
+getgenv().Toggle = true -- This toggles the esp, turning it to false will turn it off
+getgenv().TC = false -- This toggles team check, turning it on will turn on team check
+local PlayerName = "Name" -- You can decide if you want the Player's name to be a display name which is "DisplayName", or username which is "Name"
+
+--//Variables\\--
+local P = game:GetService("Players")
+local LP = P.LocalPlayer
+
+--//Debounce\\--
+local DB = false
+
+--//Notification\\--
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Notification",
+	Text = "Best ESP by.ExluZive" ,
+	Button1 = "Shut Up",
+	Duration = math.huge
+})
+
+--//Loop\\--
+while task.wait() do
+	if not getgenv().Toggle then
+		break
+	end
+	if DB then 
+		return 
+	end
+	DB = true
+
+	pcall(function()
+		for i,v in pairs(P:GetChildren()) do
+			if v:IsA("Player") then
+				if v ~= LP then
+					if v.Character then
+
+						local pos = math.floor(((LP.Character:FindFirstChild("HumanoidRootPart")).Position - (v.Character:FindFirstChild("HumanoidRootPart")).Position).magnitude)
+						-- Credits to Infinite Yield for this part (pos) ^^^^^^
+
+						if v.Character:FindFirstChild("Totally NOT Esp") == nil and v.Character:FindFirstChild("Icon") == nil and getgenv().TC == false then
+							--//ESP-Highlight\\--
+							local ESP = Instance.new("Highlight", v.Character)
+
+							ESP.Name = "Totally NOT Esp"
+							ESP.Adornee = v.Character
+							ESP.Archivable = true
+							ESP.Enabled = true
+							ESP.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+							ESP.FillColor = v.TeamColor.Color
+							ESP.FillTransparency = 0.5
+							ESP.OutlineColor = Color3.fromRGB(255, 255, 255)
+							ESP.OutlineTransparency = 0
+
+							--//ESP-Text\\--
+							local Icon = Instance.new("BillboardGui", v.Character)
+							local ESPText = Instance.new("TextLabel")
+
+							Icon.Name = "Icon"
+							Icon.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+							Icon.Active = true
+							Icon.AlwaysOnTop = true
+							Icon.ExtentsOffset = Vector3.new(0, 1, 0)
+							Icon.LightInfluence = 1.000
+							Icon.Size = UDim2.new(0, 800, 0, 50)
+
+							ESPText.Name = "ESP Text"
+							ESPText.Parent = Icon
+							ESPText.BackgroundColor3 = v.TeamColor.Color
+							ESPText.BackgroundTransparency = 1.000
+							ESPText.Size = UDim2.new(0, 800, 0, 50)
+							ESPText.Font = Enum.Font.SciFi
+							ESPText.Text = v[PlayerName].." | 距离: "..pos
+							ESPText.TextColor3 = v.TeamColor.Color
+							ESPText.TextSize = 10.800
+							ESPText.TextWrapped = true
+						else
+							if v.TeamColor ~= LP.TeamColor and v.Character:FindFirstChild("Totally NOT Esp") == nil and v.Character:FindFirstChild("Icon") == nil and getgenv().TC == true then
+								--//ESP-Highlight\\--
+								local ESP = Instance.new("Highlight", v.Character)
+
+								ESP.Name = "Totally NOT Esp"
+								ESP.Adornee = v.Character
+								ESP.Archivable = true
+								ESP.Enabled = true
+								ESP.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+								ESP.FillColor = v.TeamColor.Color
+								ESP.FillTransparency = 0.5
+								ESP.OutlineColor = Color3.fromRGB(255, 255, 255)
+								ESP.OutlineTransparency = 0
+
+								--//ESP-Text\\--
+								local Icon = Instance.new("BillboardGui", v.Character)
+								local ESPText = Instance.new("TextLabel")
+
+								Icon.Name = "Icon"
+								Icon.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+								Icon.Active = true
+								Icon.AlwaysOnTop = true
+								Icon.ExtentsOffset = Vector3.new(0, 1, 0)
+								Icon.LightInfluence = 1.000
+								Icon.Size = UDim2.new(0, 800, 0, 50)
+
+								ESPText.Name = "ESP Text"
+								ESPText.Parent = Icon
+								ESPText.BackgroundColor3 = v.TeamColor.Color
+								ESPText.BackgroundTransparency = 1.000
+								ESPText.Size = UDim2.new(0, 800, 0, 50)
+								ESPText.Font = Enum.Font.SciFi
+								ESPText.Text = v[PlayerName].." | 距离: "..pos
+								ESPText.TextColor3 = v.TeamColor.Color
+								ESPText.TextSize = 10.800
+								ESPText.TextWrapped = true
+							else
+								if not v.Character:FindFirstChild("Totally NOT Esp").FillColor == v.TeamColor.Color and not v.Character:FindFirstChild("Icon").TextColor3 == v.TeamColor.Color then
+									v.Character:FindFirstChild("Totally NOT Esp").FillColor = v.TeamColor.Color
+									v.Character:FindFirstChild("Icon").TextColor3 = v.TeamColor.Color
+								else
+									if v.Character:FindFirstChild("Totally NOT Esp").Enabled == false and v.Character:FindFirstChild("Icon").Enabled == false then
+										v.Character:FindFirstChild("Totally NOT Esp").Enabled = true
+										v.Character:FindFirstChild("Icon").Enabled = true
+									else
+										if v.Character:FindFirstChild("Icon") then
+											v.Character:FindFirstChild("Icon")["ESP Text"].Text = v[PlayerName].." | Distance: "..pos
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
 	end)
+
+	wait()
+
+	DB = false
+end
+
+	end 
+
+})
 	
         credits:Button(
         "自瞄",
@@ -150,18 +297,121 @@ end)
 end)
 
 credits:Button(
-        "无限跳",
-        function()
-         loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()   
-        end
-    )
-    
-    credits:Button(
         "踏空行走",
         function()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
-        end
-    )
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+        end)
+
+credits:Button(
+        "无限跳",
+        function()
+        -- Make sure to copy aLL of this!
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local INFJUMP = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.Active = true
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.119258665, 0, 0, 0)
+main.Size = UDim2.new(0, 146, 0, 28)
+main.Active = true
+main.Draggable = false
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 146, 0, 28)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "杂项"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 17.000
+TextLabel.TextWrapped = true
+
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 1, 0)
+Frame.Size = UDim2.new(0, 146, 0, 61)
+
+INFJUMP.Name = "INFJUMP"
+INFJUMP.Parent = main
+INFJUMP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP.BorderSizePixel = 0
+INFJUMP.Position = UDim2.new(0.794520497, 0, 1.6785717, 0)
+INFJUMP.Size = UDim2.new(0, 21, 0, 21)
+INFJUMP.Font = Enum.Font.SourceSans
+INFJUMP.Text = ""
+INFJUMP.TextColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP.TextSize = 14.000
+INFJUMP.MouseButton1Down:connect(function()
+local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+ 
+_G.JumpHeight = 50;
+ 
+function Action(Object, Function) if Object ~= nil then Function(Object); end end
+ 
+UIS.InputBegan:connect(function(UserInput)
+    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+        Action(Player.Character.Humanoid, function(self)
+            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                Action(self.Parent.HumanoidRootPart, function(self)
+                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                end)
+            end
+        end)
+    end
+end)
+end)
+
+TextLabel_2.Parent = main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0547945201, 0, 1.57142854, 0)
+TextLabel_2.Size = UDim2.new(0, 94, 0, 28)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "无限跳"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 17.000
+TextLabel_2.TextWrapped = true
+
+-- Scripts:
+
+local function TKDWQ_fake_script() -- INFJUMP.LocalScript 
+local script = Instance.new('LocalScript', INFJUMP)
+
+function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+counter = 0
+
+while wait(0.1)do
+script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+ 
+counter = counter + 0.01
+end
+end
+coroutine.wrap(TKDWQ_fake_script)()
+
+	end
+
+})
+    
 
 credits:Button(
         "点击传送工具",
@@ -178,8 +428,23 @@ end)
 credits:Button(
         "反挂机",
         function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/9fFu43FF"))()
-        end)
+        print("Anti Afk On")
+
+		local vu = game:GetService("VirtualUser")
+
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+		   wait(1)
+
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+		end)
+
+  	end
+
+})
 
 credits:Button(
         "飞行V3",
@@ -205,6 +470,237 @@ end)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'))()
 end)
 
+credits:Button(
+        "全部甩飞",
+        function()
+        local Targets = {"All"} -- "All", "Target Name", "arian_was_here"
+
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+
+local AllBool = false
+
+local GetPlayer = function(Name)
+    Name = Name:lower()
+    if Name == "all" or Name == "others" then
+        AllBool = true
+        return
+    elseif Name == "random" then
+        local GetPlayers = Players:GetPlayers()
+        if table.find(GetPlayers,Player) then table.remove(GetPlayers,table.find(GetPlayers,Player)) end
+        return GetPlayers[math.random(#GetPlayers)]
+    elseif Name ~= "random" and Name ~= "all" and Name ~= "others" then
+        for _,x in next, Players:GetPlayers() do
+            if x ~= Player then
+                if x.Name:lower():match("^"..Name) then
+                    return x;
+                elseif x.DisplayName:lower():match("^"..Name) then
+                    return x;
+                end
+            end
+        end
+    else
+        return
+    end
+end
+
+local Message = function(_Title, _Text, Time)
+    game:GetService("StarterGui"):SetCore("SendNotification", {Title = _Title, Text = _Text, Duration = Time})
+end
+
+local SkidFling = function(TargetPlayer)
+    local Character = Player.Character
+    local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
+    local RootPart = Humanoid and Humanoid.RootPart
+
+    local TCharacter = TargetPlayer.Character
+    local THumanoid
+    local TRootPart
+    local THead
+    local Accessory
+    local Handle
+
+    if TCharacter:FindFirstChildOfClass("Humanoid") then
+        THumanoid = TCharacter:FindFirstChildOfClass("Humanoid")
+    end
+    if THumanoid and THumanoid.RootPart then
+        TRootPart = THumanoid.RootPart
+    end
+    if TCharacter:FindFirstChild("Head") then
+        THead = TCharacter.Head
+    end
+    if TCharacter:FindFirstChildOfClass("Accessory") then
+        Accessory = TCharacter:FindFirstChildOfClass("Accessory")
+    end
+    if Accessoy and Accessory:FindFirstChild("Handle") then
+        Handle = Accessory.Handle
+    end
+
+    if Character and Humanoid and RootPart then
+        if RootPart.Velocity.Magnitude < 50 then
+            getgenv().OldPos = RootPart.CFrame
+        end
+        if THumanoid and THumanoid.Sit and not AllBool then
+            return Message("Error Occurred", "Targeting is sitting", 5) -- u can remove dis part if u want lol
+        end
+        if THead then
+            workspace.CurrentCamera.CameraSubject = THead
+        elseif not THead and Handle then
+            workspace.CurrentCamera.CameraSubject = Handle
+        elseif THumanoid and TRootPart then
+            workspace.CurrentCamera.CameraSubject = THumanoid
+        end
+        if not TCharacter:FindFirstChildWhichIsA("BasePart") then
+            return
+        end
+        
+        local FPos = function(BasePart, Pos, Ang)
+            RootPart.CFrame = CFrame.new(BasePart.Position) * Pos * Ang
+            Character:SetPrimaryPartCFrame(CFrame.new(BasePart.Position) * Pos * Ang)
+            RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+            RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+        end
+        
+        local SFBasePart = function(BasePart)
+            local TimeToWait = 2
+            local Time = tick()
+            local Angle = 0
+            
+            repeat
+                if RootPart and THumanoid then
+                    if BasePart.Velocity.Magnitude < 50 then
+                        Angle = Angle + 100
+
+                        FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle),0 ,0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(2.25, 1.5, -2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(-2.25, -1.5, 2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection,CFrame.Angles(math.rad(Angle), 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection,CFrame.Angles(math.rad(Angle), 0, 0))
+                        task.wait()
+                    else
+                        FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, -1.5, -THumanoid.WalkSpeed), CFrame.Angles(0, 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
+                        task.wait()
+                        
+                        FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, -1.5, -TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(0, 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(math.rad(90), 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, -1.5 ,0), CFrame.Angles(math.rad(-90), 0, 0))
+                        task.wait()
+
+                        FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
+                        task.wait()
+                    end
+                else
+                    break
+                end
+            until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
+        end
+        
+        workspace.FallenPartsDestroyHeight = 0/0
+        
+        local BV = Instance.new("BodyVelocity")
+        BV.Name = "EpixVel"
+        BV.Parent = RootPart
+        BV.Velocity = Vector3.new(9e8, 9e8, 9e8)
+        BV.MaxForce = Vector3.new(1/0, 1/0, 1/0)
+        
+        Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+        
+        if TRootPart and THead then
+            if (TRootPart.CFrame.p - THead.CFrame.p).Magnitude > 5 then
+                SFBasePart(THead)
+            else
+                SFBasePart(TRootPart)
+            end
+        elseif TRootPart and not THead then
+            SFBasePart(TRootPart)
+        elseif not TRootPart and THead then
+            SFBasePart(THead)
+        elseif not TRootPart and not THead and Accessory and Handle then
+            SFBasePart(Handle)
+        else
+            return Message("Error Occurred", "Target is missing everything", 5)
+        end
+        
+        BV:Destroy()
+        Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
+        workspace.CurrentCamera.CameraSubject = Humanoid
+        
+        repeat
+            RootPart.CFrame = getgenv().OldPos * CFrame.new(0, .5, 0)
+            Character:SetPrimaryPartCFrame(getgenv().OldPos * CFrame.new(0, .5, 0))
+            Humanoid:ChangeState("GettingUp")
+            table.foreach(Character:GetChildren(), function(_, x)
+                if x:IsA("BasePart") then
+                    x.Velocity, x.RotVelocity = Vector3.new(), Vector3.new()
+                end
+            end)
+            task.wait()
+        until (RootPart.Position - getgenv().OldPos.p).Magnitude < 25
+        workspace.FallenPartsDestroyHeight = getgenv().FPDH
+    else
+        return Message("Error Occurred", "Random error", 5)
+    end
+end
+
+if not Welcome then Message("Script by AnthonyIsntHere", "Enjoy!", 5) end
+getgenv().Welcome = true
+if Targets[1] then for _,x in next, Targets do GetPlayer(x) end else return end
+
+if AllBool then
+    for _,x in next, Players:GetPlayers() do
+        SkidFling(x)
+    end
+end
+
+for _,x in next, Targets do
+    if GetPlayer(x) and GetPlayer(x) ~= Player then
+        if GetPlayer(x).UserId ~= 1414978355 then
+            local TPlayer = GetPlayer(x)
+            if TPlayer then
+                SkidFling(TPlayer)
+            end
+        else
+            Message("Error Occurred", "This user is whitelisted! (Owner)", 5)
+        end
+    elseif not GetPlayer(x) and not AllBool then
+        Message("Error Occurred", "Username Invalid", 5)
+    end
+end
+
+  	end    
+
+})
+         
 credits:Button(
         "单个甩人",
         function()
@@ -548,6 +1044,33 @@ creditsHUB:Button(
             loadstring(game:HttpGet("https://raw.githubusercontent.com/trdrock/mm2/main/KosyHub"))()
         end
     )
+    
+    local creds = window:Tab("战斗战士", "6035145364")
+    local credits = creds:section("内容", true)
+    
+    credits:Button(
+        "脚本1",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ddario66/Test/refs/heads/main/Combat%20warrior"))()
+        end)
+        
+        credits:Button(
+        "脚本2",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ddario66/Test/refs/heads/main/Combat%20warrior"))()
+        end)
+        
+        credits:Button(
+        "无限体力",
+        function()
+        loadstring(game:HttpGet("https://shz.al/~KSK"))()
+        end)
+        
+        credits:Button(
+        "外网杀人脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IsaaaKK/cwhb/main/cw.txt"))()
+        end)
     
         local creds = window:Tab("BF", "91558537728361")
     local credits = creds:section("BF", true)
@@ -995,6 +1518,12 @@ local creds = window:Tab("其他脚本", "91558537728361")
         end)
         
         credits:Button(
+        "RB脚本中心(功能比较多，且实用",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yungengxin/roblox/main/RbHUB-v_1.2.2"))()
+        end)
+        
+        credits:Button(
         "COA脚本",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAJIAOBEN/main/By.pop.cat.kun/COXIEYI"))()
@@ -1031,7 +1560,13 @@ local creds = window:Tab("其他脚本", "91558537728361")
         end)
         
         credits:Button(
-        "皮脚本",
+        "白脚本破解版",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/LsrKtbPy"))()
+        end)
+        
+        credits:Button(
+        "皮脚本(需加群组",
         function()
         getgenv().XiaoPi="皮脚本QQ群1002100032" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
         end)
