@@ -111,7 +111,7 @@ end)
         end)
         
         credits:Button(
-        "子追",
+        "子追(可能没用",
         function()
         loadstring(game:HttpGet("https://pastebin.com/raw/1AJ69eRG"))()
         end)
@@ -806,9 +806,15 @@ local creds = window:Tab("整活脚本!", "992417778")
         end)
         
         credits:Button(
-        "打飞机道具🤓(有些服务器用不了)",
+        "打飞机道具R6🤓(有些服务器用不了)",
         function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-jerk-off-25958"))()
+        end)
+        
+        credits:Button(
+        "打飞机道具R15🤓(有些服务器用不了)",
+        function()
+        loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))()
         end)
         
         local creds = window:Tab("用来制作脚本的", "992417778")
@@ -1424,6 +1430,18 @@ local creds = window:Tab("其他脚本", "992417778")
         end)
         
         credits:Button(
+        "叶脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/roblox-ye/QQ515966991/refs/heads/main/ROBLOX-CNVIP-XIAOYE.lua"))()
+        end)
+        
+        credits:Button(
+        "剑客免费版",
+        function()
+        loadstring(request({Url="https://raw.githubusercontent.com/Zer0neK/JianKe/refs/heads/main/初夏.lua"}).Body)()
+        end)
+        
+        credits:Button(
         "COA脚本",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAJIAOBEN/main/By.pop.cat.kun/COXIEYI"))()
@@ -1451,6 +1469,12 @@ local creds = window:Tab("其他脚本", "992417778")
         "猫王脚本",
         function()
         getgenv().MAO = "猫猫王者脚本群935143896"loadstring(game:HttpGet("https://raw.githubusercontent.com/dkfkfkfjfkfjdj/longshu/main/%E6%B7%B7%E6%B7%86%E6%96%87%E4%BB%B6.lua"))()("猫猫脚本 V2.0")
+        end)
+        
+        credits:Button(
+        "情云脚本",
+        function()
+        loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
         end)
         
         credits:Button(
