@@ -999,15 +999,15 @@ creditsHUB:Button(
     local credits = creds:section("内容", true)
     
     credits:Button(
-        "功能齐全的脚本",
+        "Ficsh1",
         function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/wZBEgHFk"))()
+        loadstring(game:HttpGet("https://pastes.io/raw/hooked-002-best-fisch-script"))()
         end)
         
         credits:Button(
-        "Ficsh汉化脚本",
+        "Ficsh2",
         function()
-        loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\103\105\116\104\117\98\46\99\111\109\47\88\105\97\111\89\117\110\85\119\85\47\88\105\97\111\89\117\110\85\119\85\47\114\97\119\47\109\97\105\110\47\83\99\114\105\112\116\37\50\70\70\105\115\99\104\37\50\48\67\78\37\50\48\86\101\114\115\105\111\110\34\44\32\116\114\117\101\41\41\40\41\10")()
+        loadstring(game:HttpGet("https://bonkhubloader.netlify.app",true))()
         end)
         
         credits:Button(
