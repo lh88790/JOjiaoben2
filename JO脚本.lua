@@ -1029,6 +1029,12 @@ creditsHUB:Button(
         end)
         
         credits:Button(
+        "传送到梅林",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-930.322693, 227.230988, -994.040588, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        end)
+        
+        credits:Button(
         "传送到守卫祭坛",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1309.84265, -796.916199, -107.134315, -0.922893524, 0.152973562, -0.353364706, 0, 0.917698741, 0.397276968, 0.385055184, 0.366644353, -0.846938312)
@@ -1038,6 +1044,12 @@ creditsHUB:Button(
         "传送到深渊",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1653.52563, -199.001068, -2841.93066, -0.975113094, -0.126666948, 0.181961268, 0, 0.820724964, 0.571323395, -0.22170797, 0.557104945, -0.800299704)
+        end)
+        
+        credits:Button(
+        "传送到深度巅峰",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13644.931640625, -11031.451171875, 342.4993896484375)
         end)
         
         credits:Button(
