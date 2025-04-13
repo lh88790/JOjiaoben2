@@ -1001,11 +1001,18 @@ creditsHUB:Button(
     credits:Button(
         "Ficsh1",
         function()
-        loadstring(game:HttpGet("https://pastes.io/raw/hooked-002-best-fisch-script"))()
+        script_key="PASTEKEYHERE";
+(loadstring or load)(game:HttpGet("https://getnative.cc/script/loader"))()
         end)
         
         credits:Button(
         "Ficsh2",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+        end)
+        
+        credits:Button(
+        "Ficsh3",
         function()
         loadstring(game:HttpGet("https://bonkhubloader.netlify.app",true))()
         end)
