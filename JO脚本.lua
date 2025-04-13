@@ -1030,6 +1030,18 @@ creditsHUB:Button(
         end)
         
         credits:Button(
+        "传送到爆率超高点位",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4251.42529, -11172.4893, 3885.5061, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        end)
+        
+        credits:Button(
+        "传送到爆率超高点位2",
+        function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2515.55786, -11221.5352, 6910.12988, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        end)
+        
+        credits:Button(
         "传送到深度",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(943.756958, -706.108398, 1251.77087, -0.386100113, 0.284740716, -0.87741065, 0, 0.951167107, 0.308676451, 0.92245692, 0.119180016, -0.367245734)
@@ -1054,7 +1066,7 @@ creditsHUB:Button(
         end)
         
         credits:Button(
-        "传送到深度巅峰",
+        "传送到深渊巅峰",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13644.931640625, -11031.451171875, 342.4993896484375)
         end)
