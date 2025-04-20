@@ -851,6 +851,55 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/refs/heads/main/%E5%AE%89%E8%84%9A%E6%9C%AC.lua')))()
         end)
         
+        credits:Button(
+        "力量传奇3",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+        end)
+        
+        credits:Button(
+        "力量传奇4",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Anscripterato/QQ2134702438/refs/heads/main/byato/AnScript/atoscript"))()
+        end)
+        
+        
+        credits:Button(
+        "自动吃蛋",
+        function()
+        loadstring(game:HttpGet("https://raw.github.com/114514541883484/Zephyr-wave/main/agreement.lua"))()
+        end)
+        
+        credits:Button(
+        "永久免费自动切换宠物",
+        function()
+        loadstring(game:HttpGet("https://raw.github.com/f20i30s40h/Crack/main/Cracked-ShuiJiaoScript.lua"))("力量传奇切换宠物")
+        end)
+        
+        credits:Button(
+        "买守护者",
+        function()
+        game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder:FindFirstChild("Neon Guardian"))
+        end)
+        
+        credits:Button(
+        "买肌肉老师",
+        function()
+        game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder:FindFirstChild("Muscle Sensei"))
+        end)
+        
+        credits:Button(
+        "买暗星",
+        function()
+        game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder:FindFirstChild("Darkstar Hunter"))
+        end)
+        
+        credits:Button(
+        "买肌肉之王光环",
+        function()
+        game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder:FindFirstChild("Muscle King"))
+        end)
+        
         local creds = window:Tab("犯罪", "992417778")
     local credits = creds:section("犯罪内容", true)
     
@@ -864,6 +913,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         "ghost",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/qwertyu4t55567rgdf/fling/refs/heads/main/Loader.lua"))()
+        end)
+        
+        credits:Button(
+        "vape",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
         end)
         
         credits:Button(
