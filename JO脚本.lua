@@ -852,6 +852,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         end)
         
         credits:Button(
+        "力量传奇3(卡密doitenroi",
+        function()
+        loadstring(game:HttpGet("https://doitenroi.vercel.app/script/Nova_Hub_Cracked.lua"))()
+        end)
+        
+        credits:Button(
         "力量传奇3",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
@@ -1368,7 +1374,7 @@ Tab21:Button(
     local credits = creds:section("最强战场内容", true)
     
     credits:Button(
-        "KJ",
+        "KJ动作",
         function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-I-found-a-person-mode-KJ-fake-one-not-mine-19405"))()
         end)
@@ -1380,7 +1386,7 @@ Tab21:Button(
         end)
         
         credits:Button(
-        "饿狼自动1+",
+        "饿狼自动1+2",
         function()
         loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
         end)
@@ -1392,6 +1398,75 @@ Tab21:Button(
         end)
         
         credits:Button(
+        "攻击自动传送到最近的人脚下",
+        function()
+        local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+ 
+-- Create RemoteEvent for server communication
+local stickToggleEvent = Instance.new("RemoteEvent")
+stickToggleEvent.Name = "StickToggleEvent"
+stickToggleEvent.Parent = ReplicatedStorage
+ 
+-- Create a screen GUI and button
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "StickToggleGui"
+screenGui.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
+ 
+local toggleButton = Instance.new("TextButton")
+toggleButton.Size = UDim2.new(0, 100, 0, 30)
+toggleButton.Position = UDim2.new(0, 10, 0, 10)
+toggleButton.Text = "Toggle Stick"
+toggleButton.Parent = screenGui
+ 
+-- Variables
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+local stickEnabled = false
+local stickOffset = Vector3.new(0, -5, 0)  -- Offset below the player’s feet
+ 
+-- Function to get the closest player
+local function getClosestPlayer(position)
+    local closestPlayer = nil
+    local shortestDistance = math.huge
+    for _, p in ipairs(Players:GetPlayers()) do
+        if p ~= player and p.Character and p.Character:FindFirstChild("HumanoidRootPart") then
+            local distance = (p.Character.HumanoidRootPart.Position - position).magnitude
+            if distance < shortestDistance then
+                shortestDistance = distance
+                closestPlayer = p
+            end
+        end
+    end
+    return closestPlayer
+end
+ 
+-- Function to stick to the nearest player
+local function updateCharacterPosition()
+    if stickEnabled then
+        local closestPlayer = getClosestPlayer(humanoidRootPart.Position)
+        if closestPlayer and closestPlayer.Character and closestPlayer.Character:FindFirstChild("HumanoidRootPart") then
+            local targetPosition = closestPlayer.Character.HumanoidRootPart.Position
+            -- Place the character below the nearest player
+            local newPosition = targetPosition + stickOffset
+            humanoidRootPart.CFrame = CFrame.new(newPosition, newPosition + Vector3.new(0, 1, 0))
+        end
+    end
+end
+ 
+-- Toggle button functionality
+toggleButton.MouseButton1Click:Connect(function()
+    stickEnabled = not stickEnabled
+    stickToggleEvent:FireServer(stickEnabled)
+end)
+ 
+-- Update position every frame
+RunService.Heartbeat:Connect(updateCharacterPosition)
+        end)
+        
+        credits:Button(
         "外网超强脚本(有隐身)",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()
@@ -1400,7 +1475,7 @@ Tab21:Button(
         credits:Button(
         "垃圾桶战神",
         function()
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man", true))()
        end)
         
        credits:Button(
@@ -1542,9 +1617,9 @@ local creds = window:Tab("其他脚本", "992417778")
         end)
         
         credits:Button(
-        "安脚本免费版",
+        "安脚本(需加群组",
         function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Anscripterato/QQ2134702438/refs/heads/main/byato/AnScript/atoscript"))()
         end)
         
         credits:Button(
