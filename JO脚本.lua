@@ -1473,6 +1473,18 @@ RunService.Heartbeat:Connect(updateCharacterPosition)
         end)
         
         credits:Button(
+        "全能侠动作(请将角色切换成一拳",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nova2ezz/OmniManScript/refs/heads/main/Protected_4630876916309035.lua"))()
+        end)
+        
+        credits:Button(
+        "火车头动作(请将角色切换成饿狼",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/ATrainSounds/refs/heads/main/ATrain.lua"))()
+        end)
+        
+        credits:Button(
         "垃圾桶战神",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Trashcan%20Man", true))()
@@ -1500,7 +1512,7 @@ RunService.Heartbeat:Connect(updateCharacterPosition)
         end)
         
         credits:Button(
-        "传送到虚空",
+        "传送到虚空(建议先用通用中的指令脚本输入float再传送",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9940.13482163, -100.1116714, 85.14746118)
         end)
@@ -1529,23 +1541,7 @@ RunService.Heartbeat:Connect(updateCharacterPosition)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1096, 19.927001953125, 23010.998046875)
         end)
         
-        credits:Button(
-        "传送打架专属位置",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(151.79539489746094, 439.51055908203125, -524.4990844726562)
-        end)
-        
-        credits:Button(
-        "传送到神秘地点",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.5220336914062, 442.50567626953125, -1296.0042724609375)
-        end)
-        
-        credits:Button(
-        "传送到神秘地点2",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1589.6148681640625, 442.50567626953125, 402.5389709472656)
-        end)
+
         
         credits:Button(
         "传送到神秘月抛点😍",
@@ -1554,22 +1550,12 @@ RunService.Heartbeat:Connect(updateCharacterPosition)
         end)
         
         credits:Button(
-        "传送到沙滩",
+        "传送到超小角落",
         function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(437.9998474121094, 440.6055908203125, -375.9998779296875)
         end)
         
-        credits:Button(
-        "传送到海",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1011.7119750976562, 442.50567626953125, -307.4450988769531)
-        end)
-        
-        credits:Button(
-        "传送到瀑布上",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1162.2137451171875, 816.7724609375, -807.6665649414062)
-        end)
+
 
 local creds = window:Tab("其他脚本", "992417778")
     local credits = creds:section("其他脚本内容", true)
