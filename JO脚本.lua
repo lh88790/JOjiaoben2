@@ -1473,15 +1473,31 @@ RunService.Heartbeat:Connect(updateCharacterPosition)
         end)
         
         credits:Button(
-        "全能侠动作(请将角色切换成一拳",
+        "卡密!动作(请将角色切换成恶狼",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nova2ezz/OmniManScript/refs/heads/main/Protected_4630876916309035.lua"))()
+        loadstring(game:HttpGet("https://paste.ee/r/AyoFs"))()
         end)
         
         credits:Button(
-        "火车头动作(请将角色切换成饿狼",
+        "火车头动作(请将角色切换成恶狼",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/ATrainSounds/refs/heads/main/ATrain.lua"))()
+        getgenv().settings = {
+    ["morph"] = {
+        ["enabled"] = false,
+        ["dontchangeskincolor"] = false,
+    },
+    ["ult_forcewalkspeed"] = true, -- forces walkspeed even if set to 0
+    ["ult_walkspeed"] = 64, -- how fast you walk in ult
+    ["tp_duration"] = 0.15 -- how long it takes to tp
+} 
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/ATrainSounds/refs/heads/main/ATrain.lua"))()
+        end)
+        
+        credits:Button(
+        "海贼王黄猿动作(你有被光速踢过吗😈请将角色切换成恶狼",
+        function()
+        loadstring(game:HttpGet("https://paste.ee/r/NPnfk"))()
         end)
         
         credits:Button(
@@ -1491,7 +1507,7 @@ RunService.Heartbeat:Connect(updateCharacterPosition)
        end)
         
        credits:Button(
-        "改恶狼动作(包含两个功能)",
+        "低配版火车头动作(包含两个功能)",
         function()
         loadstring(game:HttpGet("https://paste.ee/r/AnZ5j"))()
         end)
