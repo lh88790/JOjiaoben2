@@ -1372,6 +1372,15 @@ Tab21:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
         end)
         
+        local creds = window:Tab("英雄战场", "6035145364")
+    local credits = creds:section("脚本内容", true)
+    
+    credits:Button(
+        "杀戮光环脚本",
+        function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/godor1010/godor/refs/heads/main/heroes_battlegrounds_2_'))()
+        end)
+        
         local creds = window:Tab("传奇战场", "992417778")
     local credits = creds:section("传奇战场", true)
     
