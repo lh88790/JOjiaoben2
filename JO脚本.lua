@@ -1352,6 +1352,15 @@ Tab21:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
         end)
         
+        local creds = window:Tab("传奇战场", "6035145364")
+    local credits = creds:section("传奇战场", true)
+    
+    credits:Button(
+        "非常强的脚本!(里面有原地重生来刷新技能来实现无限技能",
+        function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkDoorsKing/Clinet/main/LegendsBattlegrounds'))()
+        end)
+        
     local creds = window:Tab("刀刃球", "992417778")
     local credits = creds:section("刀刃球", true)
     
