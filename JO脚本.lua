@@ -25,7 +25,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BINji
     bin:Label("本脚本可能很垃圾")
     bin:Label("正在努力制作此脚本")
     bin:Label("创作日期：忘了")
-    bin:Label("更新时间：2025年4月8日，只更新了一些小功能")
+    bin:Label("更新时间：2025年5月1日，只更新了一些小功能")
     
     bin:Button("复制作者qq", function()
     setclipboard("110")
@@ -906,7 +906,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder:FindFirstChild("Muscle King"))
         end)
         
-        local creds = window:Tab("死铁轨", "6035145364")
+        local creds = window:Tab("死铁轨", "992417778")
     local credits = creds:section("脚本内容", true)
     credits:Button(
         "该有的功能都有(中文",
@@ -1372,7 +1372,7 @@ Tab21:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
         end)
         
-        local creds = window:Tab("传奇战场", "6035145364")
+        local creds = window:Tab("传奇战场", "992417778")
     local credits = creds:section("传奇战场", true)
     
     credits:Button(
@@ -1553,7 +1553,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
         end)
         
-        local creditsDSB = creds:section("传送内容", true)
+        local credits = creds:section("传送内容", true)
     
         credits:Button(
         "传送到假人生成点",
@@ -1591,7 +1591,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1096, 19.927001953125, 23010.998046875)
         end)
         
-
         
         credits:Button(
         "传送到神秘月抛点😍",
