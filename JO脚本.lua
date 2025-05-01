@@ -906,6 +906,26 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         game:GetService("ReplicatedStorage").cPetShopRemote:InvokeServer(game:GetService("ReplicatedStorage").cPetShopFolder:FindFirstChild("Muscle King"))
         end)
         
+        local creds = window:Tab("死铁轨", "6035145364")
+    local credits = creds:section("脚本内容", true)
+    credits:Button(
+        "该有的功能都有(中文",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/iopjklbnmsss/SansHubScript/refs/heads/main/SansHub"))()
+        end)
+        
+        credits:Button(
+        "功能齐全的脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
+        end)
+        
+        credits:Button(
+        "自动刷债券",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/thiennrb7/Script/refs/heads/main/autobond"))()
+        end)
+        
         local creds = window:Tab("犯罪", "992417778")
     local credits = creds:section("犯罪内容", true)
     
@@ -1533,8 +1553,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/TSB/refs/heads/main/CombatGui"))()
         end)
         
-        local creds = window:Tab("最强战场传送", "992417778")
-    local credits = creds:section("传送内容", true)
+        local creditsDSB = creds:section("传送内容", true)
     
         credits:Button(
         "传送到假人生成点",
