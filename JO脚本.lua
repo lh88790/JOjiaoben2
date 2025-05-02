@@ -627,27 +627,8 @@ credits:Button(
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
         end)
-        
-        local creds = window:Tab("旋转", "6035145364")
-    local credits = creds:section("旋转内容", true)
-    
-    Player:Button(
-    "旋转10",
-    function()
-    local speed = 10
 
-local plr = game:GetService("Players").LocalPlayer
-repeat task.wait() until plr.Character
-local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
-plr.Character:WaitForChild("Humanoid").AutoRotate = false
-local velocity = Instance.new("AngularVelocity")
-velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
-velocity.MaxTorque = math.huge
-velocity.AngularVelocity = Vector3.new(0, speed, 0)
-velocity.Parent = humRoot
-velocity.Name = "Spinbot"
-    end)
-        
+
         local creds = window:Tab("范围", "992417778")
     local credits = creds:section("范围内容", true)
     
