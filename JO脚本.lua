@@ -69,6 +69,12 @@ end)
         end)
         
         credits:Button(
+        "NA管理员",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+        end)
+        
+        credits:Button(
         "聊天绕过",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/BingusWR/Fechatbypassroblox/refs/heads/main/Fe%20Roblox%20ChatBypass"))()
@@ -328,7 +334,11 @@ credits:Button(
         mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
         end)
 
-
+credits:Button(
+        "防踢",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Anti-Kick/main/Anti%20Kick.lua"))()
+        end)
 
 credits:Button(
         "反挂机",
@@ -351,6 +361,12 @@ CoreGui:SetCore("SendNotification", {
 })
         end
     )
+    
+    credits:Button(
+        "甩飞",
+        function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/hQSBGsw2'))()
+        end)
 
 credits:Button(
         "飞行V3",
@@ -361,7 +377,7 @@ end)
 credits:Button(
         "飞车",
         function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/G3GnBCyC", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5/main/By.pop.cat.kun/pop%2Ccat%2Ckun%E7%BF%BB%E8%AF%91%E7%9A%84%E9%A3%9E%E8%BD%A6"))()
         end)
 
 credits:Button(
@@ -710,6 +726,15 @@ credits:Button(
         function()
     _G.HeadSize = 300 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 0.7 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
+
+local creds = window:Tab("黑洞", "992417778")
+    local credits = creds:section("吸起来!", true)
+    
+    credits:Button(
+        "黑洞(已翻译",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5/main/By.pop.cat.kun/%E5%B7%B2%E5%BC%80%E6%BA%90%E9%BB%91%E6%B4%9E%E8%84%9A%E6%9C%AC%E7%BF%BB%E8%AF%91pop.kat.kun"))()
+        end)
         
         local creds = window:Tab("摊位世界", "992417778")
     local credits = creds:section("脚本内容", true)
@@ -1464,7 +1489,7 @@ Tab21:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/doors224"))()
         end)
         
-        local creds = window:Tab("英雄战场", "6035145364")
+        local creds = window:Tab("英雄战场", "992417778")
     local credits = creds:section("脚本内容", true)
     
     credits:Button(
