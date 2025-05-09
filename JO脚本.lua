@@ -117,9 +117,9 @@ end)
         end)
         
         credits:Button(
-        "子追(可能没用",
+        "通用子追(俄亥俄可以用，其他游戏可能没用",
         function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/1AJ69eRG"))()
+        loadstring(game:HttpGet('https://gist.github.com/474375w/d235cfbf70f5446a6198564e5600f60b/raw'))()
         end)
         
         credits:Button(
@@ -1032,15 +1032,21 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         end)
         
         credits:Button(
-        "功能齐全的脚本",
+        "功能齐全的脚本(功能自己翻译",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Loader"))()
+        loadstring(game:HttpGet("https://lunor.dev/loader"))()
         end)
         
         credits:Button(
-        "自动刷债券",
+        "复制物品和放大物品脚本",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/thiennrb7/Script/refs/heads/main/autobond"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GRPGaming/Key-System/refs/heads/Xycer-Hub-Script/Hellos"))()
+        end)
+        
+        credits:Button(
+        "自动刷债券(功能自己翻译",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/NatHub.lua"))();
         end)
         
         local creds = window:Tab("犯罪", "992417778")
@@ -1425,7 +1431,19 @@ local creds = window:Tab("被遗弃", "992417778")
     credits:Button(
         "被遗弃脚本(超级好用!",
         function()
-        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/SilkScripts/AppleStuff/refs/heads/main/AppleFSKV2")))()
+        if getgenv then
+    getgenv().BloxtrapRPC = "true"
+    getgenv().DebugNotifications = "false"
+    getgenv().TrackMePlease = "true"
+end
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua"))()
+        end)
+        
+        credits:Button(
+        "脚本2",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/souyanen/Fsscripts/refs/heads/main/Forsaken"))()
         end)
         
     
@@ -1632,6 +1650,14 @@ RunService.Heartbeat:Connect(updateCharacterPosition)
         "卡密!动作(请将角色切换成恶狼",
         function()
         loadstring(game:HttpGet("https://paste.ee/r/AyoFs"))()
+        end)
+        
+        credits:Button(
+        "火影忍者动作(请将角色切换成一拳",
+        function()
+        getgenv().Cutscene = False -- //𝖲𝖤𝖳 𝖨𝖳 "𝖥𝖠𝖫𝖲𝖤" 𝖨𝖥 𝖴 𝖣𝖮𝖭'𝖳 𝖶𝖠𝖭𝖳 𝖢𝖴𝖳𝖲𝖢𝖤𝖭𝖤 𝖠𝖭𝖣 𝖨𝖥 𝖴 𝖶𝖠𝖭𝖳 "𝖳𝖱𝖴𝖤" 𝖨𝖳\
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LolnotaKid/SCRIPTSBYVEUX/refs/heads/main/BoombasticLol.lua.txt"))()
         end)
         
         credits:Button(
