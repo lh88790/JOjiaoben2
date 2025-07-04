@@ -948,7 +948,7 @@ local creds = window:Tab("整活脚本!", "992417778")
         credits:Button(
         "spy脚本",
         function()
-        loadstring(game:HttpGet("https://web.archive.org/web/20240323091819/https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Finaloutcome/plz/refs/heads/main/simplespy"))()
         end)
         
         local creds = window:Tab("力量传奇", "992417778")
@@ -1429,7 +1429,7 @@ local creds = window:Tab("被遗弃", "992417778")
     local credits = creds:section("被遗弃", true)
     
     credits:Button(
-        "被遗弃脚本(超级好用!",
+        "被遗弃脚本(超级好用!，需卡密",
         function()
         if getgenv then
     getgenv().BloxtrapRPC = "true"
@@ -1441,7 +1441,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts
         end)
         
         credits:Button(
-        "脚本2",
+        "脚本2(卡密yes",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BobJuniorl /ForsakenBol/refs/heads/main/B0bbyHub"))()
+        end)
+        
+        credits:Button(
+        "脚本3(卡密需自己解",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/souyanen/Fsscripts/refs/heads/main/Forsaken"))()
         end)
@@ -1527,6 +1533,12 @@ Tab21:Button(
         "刀刃球",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Serwxl/BladeBall_AutoParry/refs/heads/main/Autoparry"))()
+        end)
+        
+        credits:Button(
+        "超强无敌脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/mzkv/LUNAR/refs/heads/main/BladeBall", true))()
         end)
     
        local creds = window:Tab("奶酪逃生", "992417778")
