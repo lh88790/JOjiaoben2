@@ -306,9 +306,15 @@ end
 	end)
 	
         credits:Button(
-        "自瞄",
+        "自瞄(单锁一人身体，那人死后需要点下按钮取消",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Aepione/Prensado/refs/heads/main/Prensado%20camlock"))()
+        end)
+        
+        credits:Button(
+        "自瞄2(锁头但不单锁，有墙体检测",
+        function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimlock-45467"))()
         end)
         
         credits:Toggle("夜视", "", false, function(state)
@@ -325,6 +331,12 @@ credits:Button(
         "无限跳",
         function()
         loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+        end)
+        
+        credits:Button(
+        "vape",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
         end)
         
 
@@ -1569,6 +1581,18 @@ Tab21:Button(
         "饿狼自动1+2",
         function()
         loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
+        end)
+        
+        credits:Button(
+        "Kiba Tech v2",
+        function()
+        loadstring(game:HttpGet(" https://raw.githubusercontent.com/YQANTGV3/YQANTGV3/refs/heads/main/bruh.txt"))()
+        end)
+        
+        credits:Button(
+        "YQANTG V3.1",
+        function()
+        loadstring(game:HttpGet(" https://raw.githubusercontent.com/YQANTG/YQANTG/refs/heads/main/YQANTGV31.txt"))()
         end)
         
         credits:Button(
