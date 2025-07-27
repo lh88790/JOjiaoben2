@@ -44,7 +44,7 @@ credits:Slider('修改速度', 'WalkspeedSlider', 16, 16, 99999,false, function(
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 end)
 
-credits:Slider('修改跳跃', 'Sliderflag',  16, 16, 999999,false, function(Value)
+credits:Slider('修改跳跃', 'Sliderflag',  50, 50, 999999,false, function(Value)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 	end)
 	
@@ -102,6 +102,12 @@ end)
         "定住自己",
         function()
         loadstring(game:HttpGet("https://pastebin.com/raw/YrfBSuWw"))()
+        end)
+        
+        credits:Button(
+        "假延迟",
+        function()
+        -- ðŸŒ€ Fake Lag Script by synt.t local player = game.Players.LocalPlayer local char = player.Character or player.CharacterAdded:Wait() local hum = char:WaitForChild("Humanoid") local gui = Instance.new("ScreenGui", game.CoreGui) gui.Name = "FakeLagGUI" local frame = Instance.new("Frame", gui) frame.Size = UDim2.new(0, 220, 0, 120) frame.Position = UDim2.new(0.35, 0, 0.25, 0) frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25) frame.Active = true frame.Draggable = true Instance.new("UICorner", frame).CornerRadius = UDim.new(0, 10) local title = Instance.new("TextLabel", frame) title.Size = UDim2.new(1, 0, 0, 30) title.Text = "ðŸŒ€ Fake Lag - synt.t" title.Font = Enum.Font.GothamBold title.TextSize = 16 title.TextColor3 = Color3.fromHSV(0,1,1) title.BackgroundTransparency = 1 spawn(function() while wait() do title.TextColor3 = Color3.fromHSV(tick()%5/5,1,1) end end) local toggleBtn = Instance.new("TextButton", frame) toggleBtn.Size = UDim2.new(0.9, 0, 0, 30) toggleBtn.Position = UDim2.new(0.05, 0, 0, 40) toggleBtn.Text = "Fake Lag: OFF" toggleBtn.Font = Enum.Font.Gotham toggleBtn.TextSize = 14 toggleBtn.BackgroundColor3 = Color3.fromRGB(35,35,35) toggleBtn.TextColor3 = Color3.new(1,1,1) Instance.new("UICorner", toggleBtn).CornerRadius = UDim.new(0, 6) local box = Instance.new("TextBox", frame) box.Size = UDim2.new(0.9, 0, 0, 25) box.Position = UDim2.new(0.05, 0, 0, 80) box.PlaceholderText = "Speed (e.g. 2 for slowmo, 0.3 for hyper)" box.Text = "" box.BackgroundColor3 = Color3.fromRGB(45,45,45) box.TextColor3 = Color3.new(1,1,1) box.Font = Enum.Font.Gotham box.TextSize = 13 Instance.new("UICorner", box).CornerRadius = UDim.new(0, 6) local fakeLag = false local delayValue = 2 toggleBtn.MouseButton1Click:Connect(function() fakeLag = not fakeLag toggleBtn.Text = "Fake Lag: "..(fakeLag and "ON" or "OFF") if fakeLag then delayValue = tonumber(box.Text) or 2 spawn(function() while fakeLag do if char:FindFirstChild("HumanoidRootPart") then char.HumanoidRootPart.Anchored = true wait(delayValue) char.HumanoidRootPart.Anchored = false end wait(0.05) end end) end end)
         end)
         
         credits:Button(
@@ -739,6 +745,22 @@ credits:Button(
     _G.HeadSize = 300 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 0.7 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
+local creds = window:Tab("很好用的部分服务器脚本", "6035145364")
+    local credits = creds:section("内容", true)
+    
+    
+    credits:Button(
+        "安脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Anscripterato/QQ2134702438/refs/heads/main/byato/AnScript/atoscript"))()
+        end)
+        
+        credits:Button(
+        "speedHUB",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+        end)
+
 local creds = window:Tab("黑洞", "992417778")
     local credits = creds:section("吸起来!", true)
     
@@ -1116,7 +1138,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         credits:Button(
         "极速传奇2",
         function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Anscripterato/QQ2134702438/refs/heads/main/byato/AnScript/atoscript"))()
         end)
         
         local creds = window:Tab("忍者传奇", "992417778")
@@ -1129,9 +1151,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         end)
         
         credits:Button(
+        "无限金币(用法自己摸索)",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/mS3pA0js"))()
+        end)
+        
+        credits:Button(
         "忍者传奇2",
         function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/oww')))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Anscripterato/QQ2134702438/refs/heads/main/byato/AnScript/atoscript"))()
         end)
         
         local creds = window:Tab("破坏者谜团", "992417778")
@@ -1459,6 +1487,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts
         end)
         
         credits:Button(
+        "NOL免费版(想要付费的自己买去😂😂😂",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Syndromehsh/BETA2/refs/heads/main/NOL"))()
+        end)
+        
+        credits:Button(
         "脚本3(卡密需自己解",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/souyanen/Fsscripts/refs/heads/main/Forsaken"))()
@@ -1527,6 +1561,15 @@ Tab21:Button(
         "杀戮光环脚本",
         function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/godor1010/godor/refs/heads/main/heroes_battlegrounds_2_'))()
+        end)
+        
+        local creds = window:Tab("ohio", "6035145364")
+    local credits = creds:section("ohio", true)
+    
+    credits:Button(
+        "ohio外网脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DINERO9/TXXK-9988332231C/refs/heads/main/TXX-0099998877ACSSSCRIv2"))()
         end)
         
         local creds = window:Tab("传奇战场", "992417778")
@@ -1831,7 +1874,7 @@ local creds = window:Tab("其他脚本", "992417778")
         credits:Button(
         "退休脚本",
         function()
-        qun="809771141"loadstring(game:HttpGet("https://pastebin.com/raw/yPhwFHy4"))()
+        TX = "脚本群:160369111"Script = "Free永久免费"loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/TX-Free-YYDS/refs/heads/main/FREE-TX-TEAM"))()
         end)
         
         credits:Button(
