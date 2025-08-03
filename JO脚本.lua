@@ -103,12 +103,7 @@ end)
         function()
         loadstring(game:HttpGet("https://pastebin.com/raw/YrfBSuWw"))()
         end)
-        
-        credits:Button(
-        "假延迟",
-        function()
-        -- ðŸŒ€ Fake Lag Script by synt.t local player = game.Players.LocalPlayer local char = player.Character or player.CharacterAdded:Wait() local hum = char:WaitForChild("Humanoid") local gui = Instance.new("ScreenGui", game.CoreGui) gui.Name = "FakeLagGUI" local frame = Instance.new("Frame", gui) frame.Size = UDim2.new(0, 220, 0, 120) frame.Position = UDim2.new(0.35, 0, 0.25, 0) frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25) frame.Active = true frame.Draggable = true Instance.new("UICorner", frame).CornerRadius = UDim.new(0, 10) local title = Instance.new("TextLabel", frame) title.Size = UDim2.new(1, 0, 0, 30) title.Text = "ðŸŒ€ Fake Lag - synt.t" title.Font = Enum.Font.GothamBold title.TextSize = 16 title.TextColor3 = Color3.fromHSV(0,1,1) title.BackgroundTransparency = 1 spawn(function() while wait() do title.TextColor3 = Color3.fromHSV(tick()%5/5,1,1) end end) local toggleBtn = Instance.new("TextButton", frame) toggleBtn.Size = UDim2.new(0.9, 0, 0, 30) toggleBtn.Position = UDim2.new(0.05, 0, 0, 40) toggleBtn.Text = "Fake Lag: OFF" toggleBtn.Font = Enum.Font.Gotham toggleBtn.TextSize = 14 toggleBtn.BackgroundColor3 = Color3.fromRGB(35,35,35) toggleBtn.TextColor3 = Color3.new(1,1,1) Instance.new("UICorner", toggleBtn).CornerRadius = UDim.new(0, 6) local box = Instance.new("TextBox", frame) box.Size = UDim2.new(0.9, 0, 0, 25) box.Position = UDim2.new(0.05, 0, 0, 80) box.PlaceholderText = "Speed (e.g. 2 for slowmo, 0.3 for hyper)" box.Text = "" box.BackgroundColor3 = Color3.fromRGB(45,45,45) box.TextColor3 = Color3.new(1,1,1) box.Font = Enum.Font.Gotham box.TextSize = 13 Instance.new("UICorner", box).CornerRadius = UDim.new(0, 6) local fakeLag = false local delayValue = 2 toggleBtn.MouseButton1Click:Connect(function() fakeLag = not fakeLag toggleBtn.Text = "Fake Lag: "..(fakeLag and "ON" or "OFF") if fakeLag then delayValue = tonumber(box.Text) or 2 spawn(function() while fakeLag do if char:FindFirstChild("HumanoidRootPart") then char.HumanoidRootPart.Anchored = true wait(delayValue) char.HumanoidRootPart.Anchored = false end wait(0.05) end end) end end)
-        end)
+
         
         credits:Button(
         "帽子旋转",
@@ -745,7 +740,7 @@ credits:Button(
     _G.HeadSize = 300 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 0.7 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
-local creds = window:Tab("很好用的部分服务器脚本", "6035145364")
+local creds = window:Tab("很好用的部分服务器脚本", "992417778")
     local credits = creds:section("内容", true)
     
     
@@ -753,6 +748,18 @@ local creds = window:Tab("很好用的部分服务器脚本", "6035145364")
         "安脚本",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Anscripterato/QQ2134702438/refs/heads/main/byato/AnScript/atoscript"))()
+        end)
+        
+        credits:Button(
+        "NOL",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Syndromehsh/BETA2/refs/heads/main/NOL"))()
+        end)
+        
+        credits:Button(
+        "ISIS(卡密:X&QVp₉",
+        function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/S-WTB/-/refs/heads/main/ISIS加载器'))()
         end)
         
         credits:Button(
@@ -768,6 +775,12 @@ local creds = window:Tab("黑洞", "992417778")
         "黑洞(已翻译",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/llz162652/COAv1.5/main/By.pop.cat.kun/%E5%B7%B2%E5%BC%80%E6%BA%90%E9%BB%91%E6%B4%9E%E8%84%9A%E6%9C%AC%E7%BF%BB%E8%AF%91pop.kat.kun"))()
+        end)
+        
+        credits:Button(
+        "黑洞v6",
+        function()
+        loadstring(game:HttpGet(" https://rawscripts.net/raw/Universal-Script-Super-ring-Parts-V6-28581"))()
         end)
         
         local creds = window:Tab("摊位世界", "992417778")
@@ -955,7 +968,32 @@ local creds = window:Tab("整活脚本!", "992417778")
     credits:Button(
         "别点!",
         function()
-        loadstring(game:HttpGet("https://pastefy.app/YF21aXwe/raw"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/Cracks/main/AdvancedLogic_Crack.lua"))()
+        end)
+        
+        credits:Button(
+        "被遗弃动作脚本，玩被遗弃玩疯了🤯(别人可见，对别人用技能是跟甩飞一样的效果",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CyberNinja103/brodwa/refs/heads/main/ForsakationHub"))()
+        end)
+        
+        credits:Button(
+        "假延迟",
+        function()
+        -- ðŸŒ€ Fake Lag Script by synt.t local player = game.Players.LocalPlayer local char = player.Character or player.CharacterAdded:Wait() local hum = char:WaitForChild("Humanoid") local gui = Instance.new("ScreenGui", game.CoreGui) gui.Name = "FakeLagGUI" local frame = Instance.new("Frame", gui) frame.Size = UDim2.new(0, 220, 0, 120) frame.Position = UDim2.new(0.35, 0, 0.25, 0) frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25) frame.Active = true frame.Draggable = true Instance.new("UICorner", frame).CornerRadius = UDim.new(0, 10) local title = Instance.new("TextLabel", frame) title.Size = UDim2.new(1, 0, 0, 30) title.Text = "ðŸŒ€ Fake Lag - synt.t" title.Font = Enum.Font.GothamBold title.TextSize = 16 title.TextColor3 = Color3.fromHSV(0,1,1) title.BackgroundTransparency = 1 spawn(function() while wait() do title.TextColor3 = Color3.fromHSV(tick()%5/5,1,1) end end) local toggleBtn = Instance.new("TextButton", frame) toggleBtn.Size = UDim2.new(0.9, 0, 0, 30) toggleBtn.Position = UDim2.new(0.05, 0, 0, 40) toggleBtn.Text = "Fake Lag: OFF" toggleBtn.Font = Enum.Font.Gotham toggleBtn.TextSize = 14 toggleBtn.BackgroundColor3 = Color3.fromRGB(35,35,35) toggleBtn.TextColor3 = Color3.new(1,1,1) Instance.new("UICorner", toggleBtn).CornerRadius = UDim.new(0, 6) local box = Instance.new("TextBox", frame) box.Size = UDim2.new(0.9, 0, 0, 25) box.Position = UDim2.new(0.05, 0, 0, 80) box.PlaceholderText = "Speed (e.g. 2 for slowmo, 0.3 for hyper)" box.Text = "" box.BackgroundColor3 = Color3.fromRGB(45,45,45) box.TextColor3 = Color3.new(1,1,1) box.Font = Enum.Font.Gotham box.TextSize = 13 Instance.new("UICorner", box).CornerRadius = UDim.new(0, 6) local fakeLag = false local delayValue = 2 toggleBtn.MouseButton1Click:Connect(function() fakeLag = not fakeLag toggleBtn.Text = "Fake Lag: "..(fakeLag and "ON" or "OFF") if fakeLag then delayValue = tonumber(box.Text) or 2 spawn(function() while fakeLag do if char:FindFirstChild("HumanoidRootPart") then char.HumanoidRootPart.Anchored = true wait(delayValue) char.HumanoidRootPart.Anchored = false end wait(0.05) end end) end end)
+        end)
+        
+        credits:Button(
+        "动作脚本卡密:pizza(别人见，有些还有音乐",
+        function()
+        --JOIN MY SERVER!! https://discord.gg/Nzy9gzSFYM
+ 
+repeat task.wait() until game.Players.LocalPlayer
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0riginalWarrior/Stalkie/refs/heads/main/roblox.lua"))()
+ 
+--Current Key: pizza
+ 
+--Their Discord: https://discord.com/invite/N9yJV6357C
         end)
         
         credits:Button(
@@ -1072,6 +1110,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         end)
         
         credits:Button(
+        "快速攻击(快速攻击有两个，两个不要一起开会被踢",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HeadHarse/Dusty/refs/heads/main/NOTV4TRUST"))()
+        end)
+        
+        credits:Button(
+        "超多功能",
+        function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/aceurss/AcxScripter/refs/heads/main/CapriHub-DeadRails'))()
+        end)
+        
+        credits:Button(
         "复制物品和放大物品脚本",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GRPGaming/Key-System/refs/heads/Xycer-Hub-Script/Hellos"))()
@@ -1080,7 +1130,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         credits:Button(
         "自动刷债券(功能自己翻译",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/NatHub.lua"))();
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/hungquan99/SkullHub/main/loader.lua'))()
         end)
         
         local creds = window:Tab("犯罪", "992417778")
@@ -1154,6 +1204,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         "无限金币(用法自己摸索)",
         function()
         loadstring(game:HttpGet("https://pastebin.com/raw/mS3pA0js"))()
+        end)
+        
+        credits:Button(
+        "用上面脚本弄到满元素影子后再用这个点start，金币变成nan就可以交易了，不用管5000金币解锁交易直接点",
+        function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/CPSK3k0T"))()
         end)
         
         credits:Button(
@@ -1481,9 +1537,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts
         end)
         
         credits:Button(
-        "脚本2(卡密yes",
+        "脚本2(卡密BOBBYHUBKEYWJJEBEKEI",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/BobJuniorl /ForsakenBol/refs/heads/main/B0bbyHub"))()
+        end)
+        
+        credits:Button(
+        "改范围@这个用下面的更好，但这是直接改最大",
+        function()
+        loadstring(utf8.char(table.unpack({
+108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,114,101,97,108,103,117,105,119,111,119,47,102,111,114,115,97,107,101,110,47,114,101,102,115,47,104,101,97,100,115,47,109,97,105,110,47,104,105,116,98,111,120,108,111,99,97,116,101,34,41,41,40,41
+})))()
         end)
         
         credits:Button(
@@ -1570,6 +1634,12 @@ Tab21:Button(
         "ohio外网脚本",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/DINERO9/TXXK-9988332231C/refs/heads/main/TXX-0099998877ACSSSCRIv2"))()
+        end)
+        
+        credits:Button(
+        "RB中心的ohio脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yungengxin/roblox/refs/heads/main/RbHub-OHIO"))()
         end)
         
         local creds = window:Tab("传奇战场", "992417778")
@@ -1848,9 +1918,9 @@ local creds = window:Tab("其他脚本", "992417778")
         end)
         
         credits:Button(
-        "RB脚本中心(功能比较多，且实用",
+        "RB脚本中心(功能多，且实用",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yungengxin/roblox/main/RbHUB-v_1.2.2"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yungengxin/roblox/refs/heads/main/Rb-Hub"))()
         end)
         
         credits:Button(
@@ -1910,14 +1980,14 @@ local creds = window:Tab("其他脚本", "992417778")
         credits:Button(
         "霖溺脚本",
         function()
-        KingTeam= "KingQQ新主群https://qm.qq.com/q/SU0hmhIvwk"loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/ShenJiaoBen/main/King-------------Script.txt"))()
+        KingTeam= "KingQQ新主群https://qm.qq.com/q/SU0hmhIvwk"loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/ShenJiaoBen/main/King-------------Script.txt"))()""
         end)
         
         
         credits:Button(
         "皮脚本(需加群组",
         function()
-        getgenv().XiaoPi="皮脚本QQ群1002100032" loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
         end)
         
         credits:Button(
