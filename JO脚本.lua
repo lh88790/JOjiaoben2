@@ -99,6 +99,12 @@ end)
         end)
         
         credits:Button(
+        "复制自己(别人看不见",
+        function()
+        loadstring(game:GetObjects('rbxassetid://7339698872') [1].Source)()
+        end)
+        
+        credits:Button(
         "定住自己",
         function()
         loadstring(game:HttpGet("https://pastebin.com/raw/YrfBSuWw"))()
@@ -757,7 +763,7 @@ local creds = window:Tab("很好用的部分服务器脚本", "992417778")
         end)
         
         credits:Button(
-        "ISIS(卡密:X&QVp₉",
+        "ISIS(卡密:XTomViweK2nrsHZ7AAzKOmO4luL69vtxEf_pt1HKFag",
         function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/S-WTB/-/refs/heads/main/ISIS加载器'))()
         end)
@@ -778,9 +784,9 @@ local creds = window:Tab("黑洞", "992417778")
         end)
         
         credits:Button(
-        "黑洞v6",
+        "黑洞",
         function()
-        loadstring(game:HttpGet(" https://rawscripts.net/raw/Universal-Script-Super-ring-Parts-V6-28581"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/7V8KH60M"))()
         end)
         
         local creds = window:Tab("摊位世界", "992417778")
@@ -978,22 +984,34 @@ local creds = window:Tab("整活脚本!", "992417778")
         end)
         
         credits:Button(
-        "假延迟",
+        "ac6音乐脚本(所有人可见，要自备音乐id，非常nb!!!",
         function()
-        -- ðŸŒ€ Fake Lag Script by synt.t local player = game.Players.LocalPlayer local char = player.Character or player.CharacterAdded:Wait() local hum = char:WaitForChild("Humanoid") local gui = Instance.new("ScreenGui", game.CoreGui) gui.Name = "FakeLagGUI" local frame = Instance.new("Frame", gui) frame.Size = UDim2.new(0, 220, 0, 120) frame.Position = UDim2.new(0.35, 0, 0.25, 0) frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25) frame.Active = true frame.Draggable = true Instance.new("UICorner", frame).CornerRadius = UDim.new(0, 10) local title = Instance.new("TextLabel", frame) title.Size = UDim2.new(1, 0, 0, 30) title.Text = "ðŸŒ€ Fake Lag - synt.t" title.Font = Enum.Font.GothamBold title.TextSize = 16 title.TextColor3 = Color3.fromHSV(0,1,1) title.BackgroundTransparency = 1 spawn(function() while wait() do title.TextColor3 = Color3.fromHSV(tick()%5/5,1,1) end end) local toggleBtn = Instance.new("TextButton", frame) toggleBtn.Size = UDim2.new(0.9, 0, 0, 30) toggleBtn.Position = UDim2.new(0.05, 0, 0, 40) toggleBtn.Text = "Fake Lag: OFF" toggleBtn.Font = Enum.Font.Gotham toggleBtn.TextSize = 14 toggleBtn.BackgroundColor3 = Color3.fromRGB(35,35,35) toggleBtn.TextColor3 = Color3.new(1,1,1) Instance.new("UICorner", toggleBtn).CornerRadius = UDim.new(0, 6) local box = Instance.new("TextBox", frame) box.Size = UDim2.new(0.9, 0, 0, 25) box.Position = UDim2.new(0.05, 0, 0, 80) box.PlaceholderText = "Speed (e.g. 2 for slowmo, 0.3 for hyper)" box.Text = "" box.BackgroundColor3 = Color3.fromRGB(45,45,45) box.TextColor3 = Color3.new(1,1,1) box.Font = Enum.Font.Gotham box.TextSize = 13 Instance.new("UICorner", box).CornerRadius = UDim.new(0, 6) local fakeLag = false local delayValue = 2 toggleBtn.MouseButton1Click:Connect(function() fakeLag = not fakeLag toggleBtn.Text = "Fake Lag: "..(fakeLag and "ON" or "OFF") if fakeLag then delayValue = tonumber(box.Text) or 2 spawn(function() while fakeLag do if char:FindFirstChild("HumanoidRootPart") then char.HumanoidRootPart.Anchored = true wait(delayValue) char.HumanoidRootPart.Anchored = false end wait(0.05) end end) end end)
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Ac6-Music-Vulnerability-25536"))()
         end)
         
         credits:Button(
-        "动作脚本卡密:pizza(别人见，有些还有音乐",
+        "假延迟",
         function()
-        --JOIN MY SERVER!! https://discord.gg/Nzy9gzSFYM
- 
-repeat task.wait() until game.Players.LocalPlayer
-loadstring(game:HttpGet("https://raw.githubusercontent.com/0riginalWarrior/Stalkie/refs/heads/main/roblox.lua"))()
- 
---Current Key: pizza
- 
---Their Discord: https://discord.com/invite/N9yJV6357C
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DROID-cell-sys/ANTI-UTTP-SCRIPTT/refs/heads/main/EGOR%20SCRIPT%20BY%20ANTI-UTTP"))()
+        end)
+        
+        credits:Button(
+        "动作脚本(别人可见",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Free/-emote/refs/heads/main/Delta%20mad%20stuffs"))()
+        end)
+        
+
+        credits:Button(
+        "假vr脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty45.lua"))()
+        end)
+       
+       credits:Button(
+        "假朋友脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmaboy123z/MYFRIENDSCRIPT/refs/heads/main/MYNEWFRIENDSPAWNER"))();
         end)
         
         credits:Button(
@@ -1022,6 +1040,32 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/0riginalWarrior/Stalk
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Finaloutcome/plz/refs/heads/main/simplespy"))()
         end)
+        
+        local creds = window:Tab("后门脚本", "992417778")
+    local credits = creds:section("后门", true)
+
+        
+        credits:Button(
+        "外网大蛇做的(需要有后门的服务器",
+        function()
+        loadstring(game:HttpGet("https://paste.ee/r/1FC2N"))()
+        end)
+        
+        credits:Button(
+        "后门v6(需要有后门的服务器",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/v6x/source.lua"))()
+        end)
+        
+        local creds = window:Tab("nico的下一个机器人", "992417778")
+    local credits = creds:section("内容", true)
+    
+    credits:Button(
+        "好用",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Germanized/nicosnexbotsscript/refs/heads/main/opensourcenoskiddingplease.lua"))()
+        end)
+        
         
         local creds = window:Tab("力量传奇", "992417778")
     local credits = creds:section("力量传奇内容", true)
@@ -1131,6 +1175,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         "自动刷债券(功能自己翻译",
         function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/hungquan99/SkullHub/main/loader.lua'))()
+        end)
+        
+        credits:Button(
+        "tx刷债券(无需卡密，上面的要)",
+        function()
+        --[[by 退休不退休]]QUN = "160369111"TX = "死铁轨刷债券V3"script = "死铁轨免费刷债券"loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/%E5%88%B7%E5%80%BA%E5%88%B8"))()
         end)
         
         local creds = window:Tab("犯罪", "992417778")
@@ -1293,6 +1343,15 @@ creditsHUB:Button(
         "BF外网脚本",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+        end)
+
+local creds = window:Tab("小屋角色扮演", "992417778")
+    local credits = creds:section("内容", true)
+    
+    credits:Button(
+        "小屋肘击脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CyberNinja103/brodwa/refs/heads/main/JohnDoeClickfling"))()
         end)
         
         local creds = window:Tab("Ficsh", "992417778")
@@ -1543,11 +1602,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts
         end)
         
         credits:Button(
-        "改范围@这个用下面的更好，但这是直接改最大",
+        "改范围(这个用下面的更好，但这是直接改最大",
         function()
         loadstring(utf8.char(table.unpack({
 108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,114,101,97,108,103,117,105,119,111,119,47,102,111,114,115,97,107,101,110,47,114,101,102,115,47,104,101,97,100,115,47,109,97,105,110,47,104,105,116,98,111,120,108,111,99,97,116,101,34,41,41,40,41
 })))()
+        end)
+        
+        credits:Button(
+        "改碰撞箱距离(可调整",
+        function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/broimnothim/gg2/refs/heads/main/gg2'))()
         end)
         
         credits:Button(
@@ -1627,7 +1692,7 @@ Tab21:Button(
         loadstring(game:HttpGet('https://raw.githubusercontent.com/godor1010/godor/refs/heads/main/heroes_battlegrounds_2_'))()
         end)
         
-        local creds = window:Tab("ohio", "6035145364")
+        local creds = window:Tab("ohio", "992417778")
     local credits = creds:section("ohio", true)
     
     credits:Button(
@@ -1695,6 +1760,12 @@ Tab21:Button(
         function()
         loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
         end)
+        
+        bin:Button("复制替身脚本，在enterfullusernamehere那里输入别人的名字，按防御3次是召唤和叫回去", function()
+    setclipboard("getgenv().TargetUsername = "EnterFullUsernameHere" --Capitalization Important!!
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dragonfly5101/Minosr/refs/heads/main/Stand"))()")
+end)
         
         credits:Button(
         "Kiba Tech v2",
@@ -1930,6 +2001,12 @@ local creds = window:Tab("其他脚本", "992417778")
         end)
         
         credits:Button(
+        "走马观花X(卡密iamgay或imgay",
+        function()
+        _ZOUMAGUANHUAGUI='走马观花X'loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\88\80\84\105\86\75\87\120"))()
+        end)
+        
+        credits:Button(
         "剑客免费版",
         function()
         loadstring(request({Url="https://raw.githubusercontent.com/Zer0neK/JianKe/refs/heads/main/初夏.lua"}).Body)()
@@ -1969,6 +2046,12 @@ local creds = window:Tab("其他脚本", "992417778")
         "情云脚本",
         function()
         loadstring(utf8.char((function() return table.unpack({108,111,97,100,115,116,114,105,110,103,40,103,97,109,101,58,72,116,116,112,71,101,116,40,34,104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,67,104,105,110,97,81,89,47,45,47,109,97,105,110,47,37,69,54,37,56,51,37,56,53,37,69,52,37,66,65,37,57,49,34,41,41,40,41})end)()))()
+        end)
+        
+        credits:Button(
+        "卡卡脚本(卡密:kakanb",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MIAN57/main/refs/heads/main/%E5%8D%A1%E5%8D%A12"))()
         end)
         
         credits:Button(
