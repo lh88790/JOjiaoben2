@@ -998,7 +998,7 @@ local creds = window:Tab("整活脚本!", "992417778")
         credits:Button(
         "动作脚本(别人可见",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Free/-emote/refs/heads/main/Delta%20mad%20stuffs"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Free-emote/refs/heads/main/Delta%20mad%20stuffs"))()
         end)
         
 
