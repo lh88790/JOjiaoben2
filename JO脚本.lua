@@ -101,7 +101,7 @@ end)
         credits:Button(
         "复制自己(别人看不见",
         function()
-        loadstring(game:GetObjects('rbxassetid://7339698872') [1].Source)()
+        loadstring(game:GetObjects('rbxassetid://7339698872')[1].Source))()
         end)
         
         credits:Button(
