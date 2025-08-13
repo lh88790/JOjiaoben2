@@ -990,12 +990,7 @@ local creds = window:Tab("整活脚本!", "992417778")
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/DROID-cell-sys/ANTI-UTTP-SCRIPTT/refs/heads/main/EGOR%20SCRIPT%20BY%20ANTI-UTTP"))()
         end)
-        
-        credits:Button(
-        "动作脚本(别人可见",
-        function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Free-emote/refs/heads/main/Delta%20mad%20stuffs"))()
-        end)
+
         
 
         credits:Button(
@@ -1007,7 +1002,7 @@ local creds = window:Tab("整活脚本!", "992417778")
        credits:Button(
         "假朋友脚本",
         function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmaboy123z/MYFRIENDSCRIPT/refs/heads/main/MYNEWFRIENDSPAWNER"))();
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sigmaboy123z/MYFRIENDSCRIPT/refs/heads/main/MYNEWFRIENDSPAWNER"))()
         end)
         
         credits:Button(
