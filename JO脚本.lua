@@ -329,6 +329,12 @@ credits:Button(
         function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
         end)
+        
+        credits:Button(
+        "动作脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Gazer-Ha/Free-emote/refs/heads/main/Delta%20mad%20stuffs"))()
+        end)
 
 credits:Button(
         "无限跳",
@@ -785,184 +791,6 @@ local creds = window:Tab("黑洞", "992417778")
         loadstring(game:HttpGet("https://pastebin.com/raw/7V8KH60M"))()
         end)
         
-        local creds = window:Tab("摊位世界", "992417778")
-    local credits = creds:section("脚本内容", true)
-    
-    credits:Button(
-        "金宝箱1",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-121.940552, 82.0007629, 122.395454, -1.1920929e-07, 0, 1.00000012, 0, 1, 0, -1.00000012, 0, -1.1920929e-07)
-        end)
-        
-        credits:Button(
-        "金宝箱2",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-22.4543896, -496.644989, 4.95467377, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        end)
-        
-        credits:Button(
-        "金宝箱3",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1089.5, -485, 268.299988, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        end)
-        
-        credits:Button(
-        "金宝箱4",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(593.359436, 7.81369877, 185.69545, -1, 0, 0, 0, 1, 0, 0, 0, -1)
-    end)
-    
-       credits:Button(
-        "金宝箱5",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(598.000244, -16.271862, 693.374512, 0, 0, 1, 0, 1, -0, -1, 0, 0)
-        end)
-        
-        
-        credits:Button(
-        "金宝箱6",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3102.5603, -271.59375, 161.423615, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-        end)
-        
-        credits:Button(
-        "金宝箱7",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3793.65894, -47.4890785, 517.384033, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-        end)
-        
-        credits:Button(
-        "金宝箱8",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4186.00439, 12.3269119, 696.946777, 0.999653399, 0.0263244659, -0.000327169982, -0.0263264924, 0.999584496, -0.0117363017, 1.80821808e-05, 0.0117408466, 0.999931097)
-        end)
-        
-        
-        credits:Button(
-        "金宝箱9",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4519.7666, 29.7049351, 593.238953, 0.258846343, -0.00590852275, -0.965900362, 0.0835967064, 0.996366203, 0.0163077414, 0.962294161, -0.0849673003, 0.258399725)
-        end)
-        
-        credits:Button(
-        "金宝箱10",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4908.84375, 95.9752808, 756.657532, -0.422871113, 0, -0.906189799, 0, 1, 0, 0.906189799, 0, -0.422871113)
-        end)
-        
-        credits:Button(
-        "金宝箱11",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4246.47754, 92, 111.882286, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-        end)
-        
-        credits:Button(
-        "金宝箱12",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-562.195557, 12.0964165, 453.164795, -1.1920929e-07, 0, 1.00000012, 0, 1, 0, -1.00000012, 0, -1.1920929e-07)
-        end)
-        
-        credits:Button(
-        "金宝箱13",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5122.25488, 37.5012436, 1290.28235, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        end)
-        
-        credits:Button(
-        "金宝箱14",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5132.04736, 37.4886322, 1290.28235, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        end)
-        
-        credits:Button(
-        "金宝箱15",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5142.07373, 37.5692711, 1290.28235, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        end)
-        
-        credits:Button(
-        "金宝箱16",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2478.41016, -10, 853.5, 0, 0, 1, 0, 1, -0, -1, 0, 0)
-        end)
-        
-        credits:Button(
-        "金宝箱17",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2963.48657, 70.5158768, 122.037224, 4.05311584e-06, 0.00781309698, 0.999969482, 0.0146490345, 0.999862194, -0.00781231746, -0.999892712, 0.0146486182, -0.000110387802)
-        end)
-        
-        credits:Button(
-        "金宝箱18",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3851.5, 17.546875, -679.5, 0, 0, 1, 0, 1, -0, -1, 0, 0)
-        end)
-        
-        credits:Button(
-        "金宝箱19",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3229.32056, -16.0681877, -1367.37817, -1, 0, 0, 0, 1, 0, 0, 0, -1)
-       end)
-       
-       credits:Button(
-        "金宝箱20",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3327.84766, -50.2207718, -186.785797, -1, 0, 0, 0, 1, 0, 0, 0, -1)
-        end)
-        
-        credits:Button(
-        "金宝箱21",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3262.62769, -277.061676, 812.90033, 0.866002917, -0.00368396752, -0.500025392, 0.00198587682, 0.999990284, -0.00392811466, 0.500035048, 0.00240877015, 0.866001844)
-        end)
-        
-        credits:Button(
-        "金宝箱22",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-991.5, -455, 292.099976, -1, 0, 0, 0, 1, 0, 0, 0, -1)
-        end)
-        
-        credits:Button(
-        "金宝箱23",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-942.799255, -512.949829, -652.204041, -1.1920929e-07, -0, -1.00000012, 0, 1, -0, 1.00000012, 0, -1.1920929e-07)
-        end)
-        
-        credits:Button(
-        "金宝箱24",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1045.15002, -460.999969, -55.3711853, -1, 0, 0, 0, 1, 0, 0, 0, -1)
-        end)
-        
-        credits:Button(
-        "金宝箱25",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-736.345825, 54.9684906, -114.832153, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        end)
-        
-        credits:Button(
-        "金宝箱26",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-944.478271, 78.2007751, 243.1465, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-        end)
-        
-        credits:Button(
-        "金宝箱27",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(496.194214, 102.002434, 19.4965363, -1, 0, 0, 0, 1, 0, 0, 0, -1)
-        end)
-        
-        credits:Button(
-        "金宝箱28",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4677.69189, -215.164963, 1167.62695, 0.999844968, -0.0176090114, 0, 0.0176090114, 0.999844968, 0, 0, 0, 1)
-        end)
-        
-        credits:Button(
-        "金宝箱29",
-        function()
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-949.774231, 14.2076721, 94.6968689, 0, 0, 1, 0, 1, -0, -1, 0, 0)
-        end)
 
 local creds = window:Tab("整活脚本!", "992417778")
     local credits = creds:section("整活脚本!", true)
@@ -1032,22 +860,7 @@ local creds = window:Tab("整活脚本!", "992417778")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Finaloutcome/plz/refs/heads/main/simplespy"))()
         end)
         
-        local creds = window:Tab("后门脚本", "992417778")
-    local credits = creds:section("后门", true)
 
-        
-        credits:Button(
-        "外网大蛇做的(需要有后门的服务器",
-        function()
-        loadstring(game:HttpGet("https://paste.ee/r/1FC2N"))()
-        end)
-        
-        credits:Button(
-        "后门v6(需要有后门的服务器",
-        function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/v6x/source.lua"))()
-        end)
-        
         local creds = window:Tab("nico的下一个机器人", "992417778")
     local credits = creds:section("内容", true)
     
@@ -1075,12 +888,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShenJiaoBen/Partial-S
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/refs/heads/main/%E5%AE%89%E8%84%9A%E6%9C%AC.lua')))()
         end)
         
-        credits:Button(
-        "力量传奇3(卡密doitenroi",
-        function()
-        loadstring(game:HttpGet("https://doitenroi.vercel.app/script/Nova_Hub_Cracked.lua"))()
-        end)
-        
+
         credits:Button(
         "力量传奇3",
         function()
@@ -1603,7 +1411,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ivannetta/ShitScripts
         credits:Button(
         "改碰撞箱距离(可调整",
         function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/broimnothim/gg2/refs/heads/main/gg2'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XQZ-official/XQZscripts/refs/heads/main/HitboxModificationOB.txt"))()
         end)
         
         credits:Button(
@@ -1986,6 +1794,12 @@ local creds = window:Tab("其他脚本", "992417778")
         end)
         
         credits:Button(
+        "kanl脚本",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dream77239/kanl/refs/heads/main/Kanl%E8%84%9A%E6%9C%AC"))()
+        end)
+        
+        credits:Button(
         "叶脚本",
         function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/roblox-ye/QQ515966991/refs/heads/main/ROBLOX-CNVIP-XIAOYE.lua"))()
@@ -2074,10 +1888,4 @@ local creds = window:Tab("其他脚本", "992417778")
         "中二病是最强的",
         function()
         loadstring(game:HttpGet("https://github.com/user-attachments/files/16541230/default.txt"))()
-        end)
-        
-        credits:Button(
-        "TianV1Sec脚本（已失效)",
-        function()
-        LAT = "QQ3422265683" TianV1QQqun= "495186854"loadstring(game:HttpGet("https://raw.githubusercontent.com/LinAntian/TianV1Sec/main/TianV1Sec"))()
         end)
